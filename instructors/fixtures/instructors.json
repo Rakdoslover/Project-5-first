@@ -1,0 +1,38 @@
+[
+    {
+        "pk": 1,
+        "model": "instructors.instructor",
+        "fields": {
+            "name": "Valerie Johnson",
+            "sessions": "Yoga, Core Stability & Team-Running",
+            "years_of_experience": "4",
+            "words_from_the_instructor": "I've been in the wellness business for a couple of years now and I love to the feeling you get of seeing happy faces at the end of a good workout sessions! You're going to enjoy every minute of it.",
+            "image_url": "https://unsplash.com/photos/ZvuK8YAJK0Y",
+            "image": "valerie-johnson.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "instructors.instructor",
+        "fields": {
+            "name": "Kate Winfrey",
+            "sessions": "Core Stability, Team-Body-Pump & Team-HIIT",
+            "years_of_experience": "3",
+            "words_from_the_instructor": "Here at Work Workouts we're all about the team coming together, and I thrive on that. With us you guys are gonna get your heartbeats pumping and you muscles burning, and we'll do everything as a team. Strong together!",
+            "image_url": "https://unsplash.com/photos/O1iH3EmWvbM",
+            "image": "kate-winfrey.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "instructors.instructor",
+        "fields": {
+            "name": "Stephan Silva",
+            "sessions": "W-Spin & Team-Running",
+            "years_of_experience": "5",
+            "words_from_the_instructor": "Come join me in our state of the art spinning classes, we've got everything from elite to beginners. Whatever your level is, I promise you, we're going to have a lot of fun together!",
+            "image_url": "https://unsplash.com/photos/xdqBO0f2FoM",
+            "image": "stephan-silva.jpg"
+        }
+    },
+]

@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'events',
+    'instructors',
+    'workouts',
 
     # Other
     'cloudinary_storage',
