@@ -10,6 +10,7 @@ from django.contrib.auth.mixins import (
     LoginRequiredMixin
 )
 
+
 def events(request):
     """ A view to return the event page """
 
@@ -22,4 +23,3 @@ class EventList(generic.ListView):
     queryset = Event.objects.filter(status=1).order_by("-created_on")
     template_name = "events.html"
     paginate_by = 6
-

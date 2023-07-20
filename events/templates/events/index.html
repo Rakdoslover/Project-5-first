@@ -11,10 +11,10 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in event.featured_image %}
-                                <img class="card-img-top" src="" style="max-height: 375px"
+                                <img class="card-img-top" src="/media/placeholder.jpg" style="max-height: 375px"
                                     alt="event image">
                                 {% else %}
-                                <img class="card-img-top" src=" "
+                                <img class="card-img-top" src="{{ event.featured_image.url }}"
                                     style="max-height: 375px" alt="event image">
                                 {% endif %}
                                 <div class="image-flash">
