@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="container-fluid">
+<div class="container-fluid overlay">
     <div class="row">
         <!-- Event Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for event in events %}
-                <div class="col-md-4">
+                <div class="col">
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
@@ -22,7 +22,7 @@
                                     <p class="author"></p>
                                 </div>
                             </div>
-                            <a href="{% url 'events_detail' event.slug %}" class="post-link">
+                            <a href="" class="post-link">
                                 <h2 class="card-title"></h2>
                                 <p class="card-text"></p>
                             </a>

@@ -45,7 +45,6 @@
 </head>
 
 <body>
-    <div id="main-page">
         <header class="container-fluid fixed-top">
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -81,13 +80,13 @@
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                <a href="" class="dropdown-item">Product Management</a>
+                                <a href="#" class="dropdown-item">Product Management</a>
                                 {% endif %}
-                                <a href="" class="dropdown-item">My Profile</a>
-                                <a href="" class="dropdown-item">Logout</a>
+                                <a href="#" class="dropdown-item">My Profile</a>
+                                <a href="#" class="dropdown-item">Logout</a>
                                 {% else %}
-                                <a href="" class="dropdown-item">Register</a>
-                                <a href="" class="dropdown-item">Login</a>
+                                <a href="#" class="dropdown-item">Register</a>
+                                <a href="#" class="dropdown-item">Login</a>
                                 {% endif %}
                             </div>
                         </li>
@@ -134,7 +133,6 @@
 
         {% block content %}
         {% endblock %}
-    </div>
 
 </body>
 

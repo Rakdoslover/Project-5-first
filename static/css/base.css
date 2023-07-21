@@ -2,12 +2,13 @@ html {
     height: 100%;
 }
 
-#main-page {
+body {
     background: url('/media/placeholder.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    z-index: 99999;
 }
 
 /* from Bulma */
@@ -49,6 +50,16 @@ html {
 
 .bg-black {
     background: #000 !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
