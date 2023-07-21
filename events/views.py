@@ -9,17 +9,3 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import (
     LoginRequiredMixin
 )
-
-
-def events(request):
-    """ A view to return the event page """
-
-    return render(request, 'events/events.html')
-
-
-# View for events page, with events
-class EventList(generic.ListView):
-    model = Event
-    queryset = Event.objects.filter(status=1).order_by("-created_on")
-    template_name = "events.html"
-    paginate_by = 6

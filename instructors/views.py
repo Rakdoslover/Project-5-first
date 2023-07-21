@@ -6,12 +6,10 @@ from .models import Instructor
 def instructors(request):
     """ A view to return the instructors page """
 
-    return render(request, 'instructors/instructors.html')
+    instructors = Instructor.objects.all()
 
+    context = {
+        'instructors': instructors
+    }
 
-# View for instructors page
-class InstructorsList(generic.ListView):
-    model = Instructor
-    queryset = Instructor.objects.order_by("name")
-    template_name = "instructors/instructors.html"
-    
+    return render(request, 'instructors/instructors.html', context)
