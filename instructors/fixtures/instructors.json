@@ -24,7 +24,7 @@
         }
     },
     {
-        "pk": 4,
+        "pk": 3,
         "model": "instructors.instructor",
         "fields": {
             "name": "Stephan Silva",
@@ -35,4 +35,16 @@
             "image": "stephan-silva.jpg"
         }
     },
+    {
+        "pk": 4,
+        "model": "instructors.instructor",
+        "fields": {
+            "name": "Adam Strong",
+            "sessions": "Box-Beat, Team-HIIT & Team-running",
+            "years_of_experience": "8",
+            "words_from_the_instructor": "We have everything for you and your team, let us get those spirits up, let us pump up that beat and have some good old fashioned fun in the ring together. Here at Work Workouts we're all about getting you guys what you want and what you need!",
+            "image_url": "https://unsplash.com/photos/ThqaTYD_l0o",
+            "image": "adam-strong.jpg"
+        }
+    }
 ]
