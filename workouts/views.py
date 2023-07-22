@@ -9,8 +9,3 @@ def workouts(request):
     return render(request, 'our-sessions/our-sessions.html')
 
 
-# View for instructors page
-class WorkoutsList(generic.ListView):
-    model = Workout_Session
-    queryset = Workout_Session.objects.order_by("name")
-    template_name = "our-sessions/our-sessions.html"

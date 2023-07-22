@@ -1,0 +1,79 @@
+[
+    {
+        "pk": 1,
+        "model": "workouts.workout_session",
+        "fields": {
+            "name": "Yoga",
+            "description": "",
+            "instructors": "",
+            "image_url": "",
+            "image": "",
+        }
+    },
+    {
+        "pk": 2,
+        "model": "workouts.workout_session",
+        "fields": {
+            "name": "",
+            "description": "",
+            "instructors": "",
+            "image_url": "",
+            "image": "",
+        }
+    },
+    {
+        "pk": 3,
+        "model": "workouts.workout_session",
+        "fields": {
+            "name": "",
+            "description": "",
+            "instructors": "",
+            "image_url": "",
+            "image": "",
+        }
+    },
+    {
+        "pk": 4,
+        "model": "workouts.workout_session",
+        "fields": {
+            "name": "",
+            "description": "",
+            "instructors": "",
+            "image_url": "",
+            "image": "",
+        }
+    },
+    {
+        "pk": 5,
+        "model": "workouts.workout_session",
+        "fields": {
+            "name": "",
+            "description": "",
+            "instructors": "",
+            "image_url": "",
+            "image": "",
+        }
+    },
+    {
+        "pk": 6,
+        "model": "workouts.workout_session",
+        "fields": {
+            "name": "",
+            "description": "",
+            "instructors": "",
+            "image_url": "",
+            "image": "",
+        }
+    },
+    {
+        "pk": 7,
+        "model": "workouts.workout_session",
+        "fields": {
+            "name": "",
+            "description": "",
+            "instructors": "",
+            "image_url": "",
+            "image": "",
+        }
+    },
+]
