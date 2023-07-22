@@ -4,7 +4,7 @@
         "model": "instructors.instructor",
         "fields": {
             "name": "Valerie Johnson",
-            "sessions": "Yoga, Core Stability & Team-Running",
+            "sessions": "Yoga, Core Stability & Dance-Step",
             "years_of_experience": "4",
             "words_from_the_instructor": "I've been in the wellness business for a couple of years now and I love to the feeling you get of seeing happy faces at the end of a good workout sessions! You're going to enjoy every minute of it.",
             "image_url": "https://unsplash.com/photos/ZvuK8YAJK0Y",
@@ -40,11 +40,35 @@
         "model": "instructors.instructor",
         "fields": {
             "name": "Adam Strong",
-            "sessions": "Box-Beat, Team-HIIT & Team-running",
+            "sessions": "Box-Beat, Team-HIIT, Team-Body-Pump & Team-running",
             "years_of_experience": "8",
             "words_from_the_instructor": "We have everything for you and your team, let us get those spirits up, let us pump up that beat and have some good old fashioned fun in the ring together. Here at Work Workouts we're all about getting you guys what you want and what you need!",
             "image_url": "https://unsplash.com/photos/ThqaTYD_l0o",
             "image": "adam-strong.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "instructors.instructor",
+        "fields": {
+            "name": "Alex Guray",
+            "sessions": "Yoga, Core Stability & Team-HIIT",
+            "years_of_experience": "3",
+            "words_from_the_instructor": "There is nothing we cannot do together, nothing is impossible as long as we band togethere and become our best selves. Come join us and find your best self too!",
+            "image_url": "https://unsplash.com/photos/Q-uj9m22uug",
+            "image": "alex-guray.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "instructors.instructor",
+        "fields": {
+            "name": "Cali Knight",
+            "sessions": "Dance-Step & Team-Running",
+            "years_of_experience": "4",
+            "words_from_the_instructor": "Movement is a strong way to express yourself, and here we like to express ourselves. Come join us and we can show the world the meaning of strong movements!",
+            "image_url": "https://unsplash.com/photos/0XWHaJ73wts",
+            "image": "cali-knight.jpg"
         }
     }
 ]

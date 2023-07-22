@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Workout_Session
 
-# Register your models here.
+
+admin.site.register(Workout_Session)
