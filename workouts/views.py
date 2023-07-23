@@ -6,6 +6,10 @@ from .models import Workout_Session
 def workouts(request):
     """ A view to return the our sessions page """
 
-    return render(request, 'our-sessions/our-sessions.html')
+    workout_sessions = Workout_Session.objects.all()
 
+    context = {
+        'workout_sessions': workout_sessions
+    }
 
+    return render(request, 'our-sessions/our-sessions.html', context)
