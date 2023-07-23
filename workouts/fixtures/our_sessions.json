@@ -6,7 +6,8 @@
             "name": "Yoga",
             "description": "First founded in India almost 5000 years ago, it's now one of the most popular forms of exercising. The goal here is to find a safe space for your team to move together with us and under our guidance you and your team and friends will find happiness, enjoyment and yourself. We take pride in our selection of different kind of yoga styles. Our instructors are well versed in everything from Vinyasa, Hatha, Iyengar, Ashtanga and yin yoga. Whatever you team are interested in, we've got something for you. Our Yoga sessions takes between 45 to 90 minutes, depending on the need and preferences of the group.",
             "place": "Anywhere",
-            "instructors": 1 5,
+            "instructors": "Valerie Johnsson and Alex Guray",
+            "price": "60",
             "image_url": "https://unsplash.com/photos/GaprWyIw66o",
             "image": "yoga.jpg"
         }
@@ -18,7 +19,8 @@
             "name": "Core Stability",
             "description": "Our main option for a well-balanced sessions with focus on your core, balance and stability. Here we make the movements centered through your waist the most important part, together we start off with balance warmup before moving on to the pure core movement. Along the way we explore different stability exercises standing, sitting and while on the ground. At times this will challenge you, but together we will persevere and come out strong on the other side. Our Core Stability sessions takes between 45 to 60 minutes, depending on the need and preferences of the group.",
             "place": "Anywhere",
-            "instructors": 1 2 5,
+            "instructors": "Valerie Johnson, Kate Winfrey and Alex Guray",
+            "price": "60",
             "image_url": "https://unsplash.com/photos/gJtDg6WfMlQ",
             "image": "core-stability.jpg"
         }
@@ -30,7 +32,8 @@
             "name": "Team-Running",
             "description": "Since the dawn of time man has been running, and we have kept running. We can proudly say that we know running, our instructors have a combined 17 years of coaching runners on all levels and forms. Whether you guys want a weekly run with the team to get some fresh air or you're training for that big marathon that's coming up WE got it covered! So come join us on the next session and we promise, you will not get disappointed. Our Team-Running sessions takes between 30 to 120 minutes, depending on the need and preferences of the group.",
             "place": "Anywhere",
-            "instructors": 3 4 6,
+            "instructors": "Stephan Silva, Adam Strong and Cali Knight",
+            "price": "50",
             "image_url": "https://unsplash.com/photos/Y0woUmyxGrw",
             "image": "team-running.jpg"
         }
@@ -42,7 +45,8 @@
             "name": "Team-Body-Pump",
             "description": "Are you aching for that sweet burning sensation you get from a REALLY good workout session? Well, then we have the ultimate session for the weight-lifter in you! In our state of the art gym our instructors have created the perfect environment for a team workout. The session is split in 3 parts and you work together with one, two or three partners in each of the parts. Each part represents either legs, push or pull exercises, and trust us when we say that you WILL feel your whole body working. Our Team-Body-Pump sessions takes between 30 to 60 minutes, depending on the need and preferences of the group.",
             "place": "At Work Workouts Gym",
-            "instructors": 2 4,
+            "instructors": "Kate Winfrey and Adam Strong",
+            "price": "70",
             "image_url": "https://unsplash.com/photos/nlZTjUZX2qo",
             "image": "team-body-pump.jpg"
         }
@@ -54,7 +58,8 @@
             "name": "Team-HIIT",
             "description": "We here at Work Workouts believe that all and everyone needs to feel a little rush of energy from time to time. And the that is exactly what this session is all about. Our Team-HIIT is a coordinated high intensive power session that's designed to get your heartbeat to go through the roof and keep on rising. We primarily use our own body for this seesion which makes it ideal for those wonderful summerdays when you wanna leave the office for a moment. Our Team-HIIT sessions takes between 30 to 45 minutes, depending on the need and preferences of the group.",
             "place": "Anywhere",
-            "instructors": 2 4 5,
+            "instructors": "Kate Winfrey, Adam Strong and Alex Guray",
+            "price": "50",
             "image_url": "https://unsplash.com/photos/vOZP2LojrHI",
             "image": "team-hiit.jpg"
         }
@@ -66,7 +71,8 @@
             "name": "W-Spin",
             "description": "Wisemen used to say that it's unnecessary to reinvent the wheel everytime, and we actually agree, but i's not irrelevant to experiment with it's purpose. So for our W-Spin have have something very specially to offer because it's still in our test phase. W-Spin is our newest way to bring happiness and enjoyment to our clients and therefore we have constructed a brand new group session room at the Work Workouts Gym hosted by the marvellous Stephan Silva(former olympic medallist). Together with Stephan we will keep on rolling up and down those hills and build up good sweat! Our W-Spin session takes between 30 to 120 minutes, depending on the need and preferences of the group.",
             "place": "At Work Workouts Gym",
-            "instructors": 3,
+            "instructors": "Stephan Silva",
+            "price": "70",
             "image_url": "https://unsplash.com/photos/A_ftsTh53lM",
             "image": "w-spin.jpg"
         }
@@ -78,7 +84,8 @@
             "name": "Box-Beat",
             "description": "This is where we made our name, this is where our history began. Box-Beat is what put us out there and we are so proud to be able to provide you with oppotunity to swing by our Work Workouts Gym and meet Adam Strong, the man, the myth, the legend. In a fast-paced and tough session you will know the meaning of releasing your inner beast. This session revolves around using your body and some equipment to squeeze out every single drop of energy you have, and we promise, it'll be the best experience of your life! Our Box-Beat sessions takes between 45 to 75 minutes, depending on the need and preferences of the group.",
             "place": "At Work Workouts Gym",
-            "instructors": 4,
+            "instructors": "Adam Strong",
+            "price": "70",
             "image_url": "https://unsplash.com/photos/FH6JcaCrYJ0",
             "image": "box-beat.jpg"
         }
@@ -90,7 +97,8 @@
             "name": "Dance-Step",
             "description": "Give it up for our DANCE CREW!! From beginner to advanced our cochoreographed Dance-Step sessions is a movement and balance-baced class with a lot, and we mean a lot of laughs and cheers. People might enter with a frown but our highly professional dance instructors will turn that upside down into a giant smile. There are very few things so satisfying as expressing oneself by dancing and we will prove that, so come join our crew and see for yourself. Oh, and it's a tough one, you will feel the burn! Our Dance-Step sessions takes between 45 to 75 minutes, depending on the need and preferences of the group.",
             "place": "Anywhere",
-            "instructors": 1 6,
+            "instructors": "Valerie Johnson and Cali Knight",
+            "price": "60",
             "image_url": "https://unsplash.com/photos/3ckWUnaCxzc",
             "image": "dance-step.jpg"
         }
