@@ -62,6 +62,12 @@ body {
     z-index: -1;
 }
 
+/* -------------------------------- Events */
+
+.event-card {
+    max-width: auto;
+    max-height: auto;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
