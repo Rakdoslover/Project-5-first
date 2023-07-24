@@ -22,8 +22,9 @@
                         <div class="card h-150 border-0 image-container">
                             <h3 class="logo-font"><strong>Session: {{ workout_session.name }}</strong></h3>
                             {% if workout_session.image %}
-                            <img class="card-img-top img-fluid h-150" src="{{ workout_session.image.url }}"
-                                alt="{{ workout_session.name }}" />
+                            <!-- <img class="card-img-top img-fluid h-150" src="{{ workout_session.image.url }}"
+                                alt="{{ workout_session.name }}" /> -->
+                            <img class="card-img-top img-fluid h-150" src="../../../media/{{ workout_session.image }}" alt="{{ workout_session.name }}" />
                             {% else %}
                             <img class="card-img-top img-fluid h-150" src="/media/noimage.png"
                                 alt="{{ workout_session.name }}" />
