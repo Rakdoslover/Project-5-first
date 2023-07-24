@@ -11,6 +11,8 @@ body {
     z-index: 99999;
 }
 
+
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -27,6 +29,15 @@ body {
 .main-logo-link {
     width: fit-content;
 }
+
+.session-logo-link {
+    width: fit-content;
+}
+
+.session-logo-link > a:link, a:visited {
+    text-decoration: none;
+}
+
 
 .btn-black {
     background: black;

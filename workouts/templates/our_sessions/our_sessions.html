@@ -23,11 +23,11 @@
                 {% for workout_session in workout_sessions %}
                     <div class="col-6 col-m-12 col-sm-12">
                         <div class="card h-150 border-0 image-container">
-                            <h3 class="logo-font"><strong>Session: {{ workout_session.name }}</strong></h3>
+                            <h3 class="logo-font session-logo-link"><strong><a href="{% url 'session_detail' workout_session.id %}" class="nav-link" target="_blank">Session: {{ workout_session.name }}</a></strong></h3>
                             {% if workout_session.image %}
                             <!-- <img class="card-img-top img-fluid h-150" src="{{ workout_session.image.url }}"
                                 alt="{{ workout_session.name }}" /> -->
-                            <a href="{% url 'session-detail' workout_session.name %}" class="nav-link">
+                            <a href="{% url 'session_detail' workout_session.id %}" class="nav-link" target="_blank">
                                 <img class="card-img-top img-fluid h-150" src="../../../media/{{ workout_session.image }}" alt="{{ workout_session.name }}" />
                             </a>
                             {% else %}
@@ -53,6 +53,8 @@
                             </span>
                         </div>
                     </div>
+                    <br>
+                    <br>
                     {% if forloop.counter|divisibleby:1 %}
                     <div class="col-12 d-sm-none mb-5">
                         <hr />

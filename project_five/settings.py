@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'events',
     'instructors',
     'workouts',
+    'bag',
 
     # Other
     'cloudinary_storage',

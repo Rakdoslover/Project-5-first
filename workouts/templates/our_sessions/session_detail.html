@@ -14,14 +14,10 @@
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
-                {% if product.image %}
-                <a href="#" target="_blank">
+                {% if workout_session.image %}
                     <img class="card-img-top img-fluid" src="../../../media/{{ workout_session.image }}" alt="{{ workout_sesson.name }}">
-                </a>
                 {% else %}
-                <a href="#">
                     <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ workout_sesson.name }}">
-                </a>
                 {% endif %}
             </div>
         </div>
@@ -74,5 +70,5 @@
 
 {% block postloadjs %}
 {{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %}
+{% include 'workouts/includes/quantity_input_script.html' %}
 {% endblock %}

@@ -1,0 +1,5 @@
+{% if item.workout_session.image %}
+<img class="img-fluid rounded" src="{{ item.workout_session.image.url }}" alt="{{ item.workout_sessionname }}">
+{% else %}
+<img class="img-fluid rounded" src="../../../media/noimage.png" alt="{{ item.workout_sessionname }}">
+{% endif %}
