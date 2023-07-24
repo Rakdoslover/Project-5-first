@@ -18,6 +18,9 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
+
+    <!-- Part to iterate through each instructor -->
+    
     <div class="row">
         <div class="col-10 instructor-container offset-1">
             <div class="row mt-1 mb-2"></div>
@@ -26,7 +29,7 @@
                 <div class="col-6 col-m-12 col-sm-12">
                     <div class="card h-150 border-0 image-container">
                         {% if instructor.image %}
-                        <img class="card-img-top img-fluid h-150" src="{{ instructor.image_url.url }}"
+                        <img class="card-img-top img-fluid h-150" src=" ../../../media/{{ instructor.image  }}"
                             alt="{{ instructor.name }}">
                         {% else %}
                         <img class="card-img-top img-fluid h-150" src="/media/noimage.png" alt="{{ instructor.name }}">

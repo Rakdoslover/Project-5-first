@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                {% if product.image %}
+                <a href="{% url 'session-detail' workout_session.name %}" target="_blank">
+                    <img class="card-img-top img-fluid" src="{{ workout_sesson.image.url }}" alt="{{ workout_sesson.name }}">
+                </a>
+                {% else %}
+                <a href="{% url 'session-detail' workout_session.name %}">
+                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ workout_sesson.name }}">
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="session-details-container mb-5 mt-md-5">
+                <p class="mb-0">{{ workout_session.name }}</p>
+                <p class="lead mb-0 text-left font-weight-bold">${{ workout_session.price }}</p>
+                {% if request.user.is_superuser %}
+                <small class="ml-3">
+                    <a href="#">Edit</a> |
+                    <a class="text-danger" href="#">Delete</a>
+                </small>
+                {% endif %}
+                <p class="mt-3">{{ workout_session.description }}</p>
+                <form class="form" action="#" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col-12">
+                            <p class="mt-3"><strong>Quantity:</strong></p>
+                            <div class="form-group w-50">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button class="decrement-qty btn btn-black rounded-0"
+                                            data-item_id="{{ workout_session.id }}" id="decrement-qty_{{ workout_session.id }}">
+                                            <span class="icon">
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <input class="form-control qty_input" type="number" name="quantity" value="1"
+                                        min="1" max="99" data-item_id="{{ workout_session.id }}" id="id_qty_{{ workout_session.id }}">
+                                    <div class="input-group-append">
+                                        <button class="increment-qty btn btn-black rounded-0"
+                                            data-item_id="{{ workout_session.id }}" id="increment-qty_{{ workout_session.id }}">
+                                            <span class="icon">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
+{% endblock %}

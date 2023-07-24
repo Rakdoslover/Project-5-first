@@ -13,6 +13,9 @@
             <hr class="w-50 mb-1" />
         </div>
     </div>
+
+    <!-- Part to iterate through each sessions -->
+
     <div class="row">
         <div class="col-10 workouts-container offset-1">
             <div class="row mt-1 mb-2"></div>
@@ -24,7 +27,9 @@
                             {% if workout_session.image %}
                             <!-- <img class="card-img-top img-fluid h-150" src="{{ workout_session.image.url }}"
                                 alt="{{ workout_session.name }}" /> -->
-                            <img class="card-img-top img-fluid h-150" src="../../../media/{{ workout_session.image }}" alt="{{ workout_session.name }}" />
+                            <a href="{% url 'session-detail' workout_session.name %}" class="nav-link">
+                                <img class="card-img-top img-fluid h-150" src="../../../media/{{ workout_session.image }}" alt="{{ workout_session.name }}" />
+                            </a>
                             {% else %}
                             <img class="card-img-top img-fluid h-150" src="/media/noimage.png"
                                 alt="{{ workout_session.name }}" />
