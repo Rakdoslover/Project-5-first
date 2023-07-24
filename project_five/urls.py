@@ -23,7 +23,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
     path('events/', include('events.urls')),
-    path('our-sessions/', include('workouts.urls')),
+    path('our_sessions/', include('workouts.urls')),
     path('instructors/', include('instructors.urls')),
     path('summernote/', include('django_summernote.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

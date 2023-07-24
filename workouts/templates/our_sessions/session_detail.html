@@ -15,11 +15,11 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if product.image %}
-                <a href="{% url 'session-detail' workout_session.name %}" target="_blank">
-                    <img class="card-img-top img-fluid" src="{{ workout_sesson.image.url }}" alt="{{ workout_sesson.name }}">
+                <a href="#" target="_blank">
+                    <img class="card-img-top img-fluid" src="../../../media/{{ workout_session.image }}" alt="{{ workout_sesson.name }}">
                 </a>
                 {% else %}
-                <a href="{% url 'session-detail' workout_session.name %}">
+                <a href="#">
                     <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ workout_sesson.name }}">
                 </a>
                 {% endif %}
