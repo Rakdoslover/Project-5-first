@@ -46,7 +46,9 @@
                     </div>
                     <div class="col-12 col-sm-6 order-sm-last">
                         <p class="my-0">Price Each: ${{ item.workout_session.price }}</p>
-                        <p><strong>Subtotal: </strong>${{ item.workout_session.price | calc_subtotal:item.quantity }}</p>
+                        <p><strong>Subtotal: </strong>${{ item.workout_session.price | calc_subtotal:item.quantity }}
+
+                        </p>
                     </div>
                     <div class="col-12 col-sm-6">
                         {% include "bag/quantity-form.html" %}
@@ -108,8 +110,8 @@
                 </table>
             </div>
             {% else %}
-            <p class="lead mb-5">Your bag is empty.</p>
-            <a href="{% url 'workouts' %}" class="btn btn-outline-black rounded-0 btn-lg">
+            <p class="lead-mb"> our_sessions bag is empty.</p>
+            <a href="{% url 'our_sessions' %}" class="btn btn-outline-black rounded-0 btn-lg">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>
@@ -128,7 +130,7 @@
         window.scrollTo(0, 0);
     })
 </script>
-{% include 'workouts/includes/quantity_input_script.html' %}
+quantity_input_script.htmlquantity_input_script.html{% include 'workouts/includes/quantity_input_script.html' %}
 
 <script type="text/javascript">
     // Update quantity on click
@@ -142,7 +144,8 @@
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var url = `/bag/remove/${itemId}/`;
-        var data = { 'csrfmiddlewaretoken': csrfToken};
+        var data = { 'csrfmiddlewaretoken': csrfToken };
+         var data = { 'csrfmiddlewaretoken': csrfToken };
 
         $.post(url, data)
             .done(function () {

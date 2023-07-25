@@ -4,13 +4,13 @@ from django.views import generic, View
 from .models import Workout_Session
 
 
-def workouts(request):
+def our_sessions(request):
     """ A view to return the our sessions page """
 
-    workout_sessions = Workout_Session.objects.all()
+    our_sessions = Workout_Session.objects.all()
 
     context = {
-        'workout_sessions': workout_sessions
+        'our_sessions': our_sessions
     }
 
     return render(request, 'our_sessions/our_sessions.html', context)

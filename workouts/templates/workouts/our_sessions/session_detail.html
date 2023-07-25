@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% load static %} 
+{% load static %}
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -15,9 +15,10 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if workout_session.image %}
-                    <img class="card-img-top img-fluid" src="../../../media/{{ workout_session.image }}" alt="{{ workout_sesson.name }}">
+                <img class="card-img-top img-fluid" src="../../../media/{{ workout_session.image }}"
+                    alt="{{ workout_sesson.name }}">
                 {% else %}
-                    <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ workout_sesson.name }}">
+                <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ workout_sesson.name }}">
                 {% endif %}
             </div>
         </div>
@@ -41,17 +42,20 @@
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <button class="decrement-qty btn btn-black rounded-0"
-                                            data-item_id="{{ workout_session.id }}" id="decrement-qty_{{ workout_session.id }}">
+                                            data-item_id="{{ workout_session.id }}"
+                                            id="decrement-qty_{{ workout_session.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-minus"></i>
                                             </span>
                                         </button>
                                     </div>
                                     <input class="form-control qty_input" type="number" name="quantity" value="1"
-                                        min="1" max="99" data-item_id="{{ workout_session.id }}" id="id_qty_{{ workout_session.id }}">
+                                        min="1" max="99" data-item_id="{{ workout_session.id }}"
+                                        id="id_qty_{{ workout_session.id }}">
                                     <div class="input-group-append">
                                         <button class="increment-qty btn btn-black rounded-0"
-                                            data-item_id="{{ workout_session.id }}" id="increment-qty_{{ workout_session.id }}">
+                                            data-item_id="{{ workout_session.id }}"
+                                            id="increment-qty_{{ workout_session.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
                                             </span>
