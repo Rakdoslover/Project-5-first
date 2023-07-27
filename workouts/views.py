@@ -13,7 +13,7 @@ def our_sessions(request):
         'our_sessions': our_sessions
     }
 
-    return render(request, 'our_sessions/our_sessions.html', context)
+    return render(request, 'workouts/our_sessions.html', context)
 
 
 def session_detail(request, workout_session_id):
