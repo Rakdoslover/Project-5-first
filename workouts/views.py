@@ -8,7 +8,7 @@ def our_sessions(request):
     """ A view to return the our sessions page """
 
     our_sessions = Workout_Session.objects.all()
-
+    print(our_sessions)
     context = {
         'our_sessions': our_sessions
     }
@@ -26,4 +26,4 @@ def session_detail(request, workout_session_id):
         'workout_session': workout_session
     }
 
-    return render(request, 'our_sessions/session_detail.html', context)
+    return render(request, 'workouts/session_detail.html', context)

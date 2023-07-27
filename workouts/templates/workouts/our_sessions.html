@@ -1,12 +1,12 @@
 {% extends "base.html" %}
-{% load static %} 
+{% load static %}
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
-{% endblock %} 
+</div>
+{% endblock %}
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
@@ -23,58 +23,59 @@
         <div class="col-10 workouts-container offset-1">
             <div class="row mt-1 mb-2"></div>
             <div class="row">
-                {% for workout_session in workout_sessions %}
-                    <div class="col-6 col-m-12 col-sm-12">
-                        <div class="card h-150 border-0 image-container">
-                            <h3 class="logo-font session-logo-link"><strong><a href="{% url 'session_detail' workout_session.id %}" class="nav-link" target="_blank">Session: {{ workout_session.name }}</a></strong></h3>
-                            {% if workout_session.image %}
-                            <!-- <img class="card-img-top img-fluid h-150" src="{{ workout_session.image.url }}"
-                                alt="{{ workout_session.name }}" /> -->
-                            <a href="{% url 'session_detail' workout_session.id %}" class="nav-link" target="_blank">
-                                <img class="card-img-top img-fluid h-150" src="../../../media/{{ workout_session.image }}" alt="{{ workout_session.name }}" />
-                            </a>
-                            {% else %}
-                            <img class="card-img-top img-fluid h-150" src="/media/noimage.png"
-                                alt="{{ workout_session.name }}" />
-                            {% endif %}
-                        </div>
+                {% for session in our_sessions %}
+                <div class="col-6 col-m-12 col-sm-12">
+                    <div class="card h-150 border-0 image-container">
+                        <h3 class="logo-font session-logo-link"><strong><a href="{% url 'session_detail' session.id %}"
+                                    class="nav-link" target="_blank">Session: {{ session.name }}</a></strong></h3>
+                        {% if session.image %}
+                        <!-- <img class="card-img-top img-fluid h-150" src="{{ workout_session.image.url }}"
+                                        alt="{{ workout_session.name }}" /> -->
+                        <a href="{% url 'session_detail' session.id %}" class="nav-link" target="_blank">
+                            <img class="card-img-top img-fluid h-150" src="../../../media/{{ session.image }}"
+                                alt="{{ session.name }}" />
+                        </a>
+                        {% else %}
+                        <img class="card-img-top img-fluid h-150" src="/media/noimage.png" alt="{{ session.name }}" />
+                        {% endif %}
                     </div>
+                </div>
 
-                    <div class="col-6 col-m-12 col-sm-12">
-                        <div class="card h-150 border-0">
-                            <hr class="w-50 mb-0" />
-                            <span class="bg-white pt-0 border-0">
-                                <p><strong>Description: </strong>{{ workout_session.description }}
-                                </p>
-                                <p><strong>Location: </strong>{{ workout_session.place }}</p>
-                                <p>
-                                    <strong>Instructors: </strong>{{ workout_session.instructors }}
-                                </p>
-                                <p>
-                                    <strong>Price Per Session: </strong>{{ workout_session.price }}
-                                </p>
-                            </span>
-                        </div>
+                <div class="col-6 col-m-12 col-sm-12">
+                    <div class="card h-150 border-0">
+                        <hr class="w-50 mb-0" />
+                        <span class="bg-white pt-0 border-0">
+                            <p><strong>Description: </strong>{{ session.description }}
+                            </p>
+                            <p><strong>Location: </strong>{{ session.place }}</p>
+                            <p>
+                                <strong>Instructors: </strong>{{ session.instructors }}
+                            </p>
+                            <p>
+                                <strong>Price Per Session: </strong>{{ session.price }}
+                            </p>
+                        </span>
                     </div>
-                    <br>
-                    <br>
-                    {% if forloop.counter|divisibleby:1 %}
-                    <div class="col-12 d-sm-none mb-5">
-                        <hr />
-                    </div>
-                    {% endif %}{% if forloop.counter|divisibleby:2 %}
-                    <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                        <hr />
-                    </div>
-                    {% endif %}{% if forloop.counter|divisibleby:3 %}
-                    <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                        <hr />
-                    </div>
-                    {% endif %}{% if forloop.counter|divisibleby:4 %}
-                    <div class="col-12 d-none d-xl-block mb-5">
-                        <hr />
-                    </div>
-                    {% endif %}
+                </div>
+                <br>
+                <br>
+                {% if forloop.counter|divisibleby:1 %}
+                <div class="col-12 d-sm-none mb-5">
+                    <hr />
+                </div>
+                {% endif %}{% if forloop.counter|divisibleby:2 %}
+                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                    <hr />
+                </div>
+                {% endif %}{% if forloop.counter|divisibleby:3 %}
+                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                    <hr />
+                </div>
+                {% endif %}{% if forloop.counter|divisibleby:4 %}
+                <div class="col-12 d-none d-xl-block mb-5">
+                    <hr />
+                </div>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
