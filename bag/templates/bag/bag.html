@@ -45,8 +45,8 @@
                         {% include "bag/session-info.html" %}
                     </div>
                     <div class="col-12 col-sm-6 order-sm-last">
-                        <p class="my-0">Price Each: ${{ item.workout_session.price }}</p>
-                        <p><strong>Subtotal: </strong>${{ item.workout_session.price | calc_subtotal:item.quantity }}
+                        <p class="my-0">Price Each: ${{ item.session.price }}</p>
+                        <p><strong>Subtotal: </strong>${{ item.session.price | calc_subtotal:item.quantity }}
 
                         </p>
                     </div>
@@ -87,13 +87,13 @@
                             {% include "bag/session-info.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">${{ item.workout_session.price }}</p>
+                            <p class="my-0">${{ item.session.price }}</p>
                         </td>
                         <td class="py-3 w-25">
                             {% include "bag/quantity-form.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">${{ item.workout_session.price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0">${{ item.session.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
@@ -110,7 +110,7 @@
                 </table>
             </div>
             {% else %}
-            <p class="lead-mb"> our_sessions bag is empty.</p>
+            <p class="lead-mb">There are no sessions in your bag.</p>
             <a href="{% url 'our_sessions' %}" class="btn btn-outline-black rounded-0 btn-lg">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
