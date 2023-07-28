@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.utils.timezone import now
 
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -15,7 +16,9 @@ class Event(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
+    date = models.DateTimeField(default=now, editable=False, blank=True)
+    time = models.TimeField(auto_now=False, auto_now_add=False, default=now)
+    location = models.TextField(default='Work Workouts Gym')
 
     class Meta:
         ordering = ["-created_on"]
