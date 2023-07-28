@@ -20,16 +20,15 @@ def events(request):
     return render(request, 'events/events.html', context)
 
 
-def event_detail(request, product_id):
+def event_detail(request, event_id):
     """ A view to show individual event details """
 
-    event = get_object_or_404(Event, pk=product_id)
-
+    event = get_object_or_404(Event, pk=event_id)
     context = {
         'event': event,
     }
 
-    return render(request, 'events/event_detail', context)
+    return render(request, 'events/event_detail.html', context)
 
 
 @login_required
@@ -82,7 +81,7 @@ def edit_event(request, event_id):
                 )
     else:
         form = EventForm(instance=event)
-        messages.info(request, f'You are editing {event.name}')
+        messages.info(request, f'You are editing {event.title}')
 
     template = 'events/edit_event.html'
     context = {

@@ -8,7 +8,6 @@ def our_sessions(request):
     """ A view to return the our sessions page """
 
     our_sessions = Workout_Session.objects.all()
-    print(our_sessions)
     context = {
         'our_sessions': our_sessions
     }
