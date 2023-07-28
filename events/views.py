@@ -33,7 +33,7 @@ def event_detail(request, event_id):
 
 @login_required
 def add_event(request):
-    """ Add an event to the store """
+    """ Add an event to the events page """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -62,7 +62,7 @@ def add_event(request):
 
 @login_required
 def edit_event(request, event_id):
-    """ Edit an event in the store """
+    """ Edit an event on the events page """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
