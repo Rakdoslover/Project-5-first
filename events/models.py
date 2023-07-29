@@ -16,7 +16,7 @@ class Event(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    date = models.DateTimeField(default=now, editable=False, blank=True)
+    date = models.DateTimeField(default=now, editable=True, blank=True)
     time = models.TimeField(auto_now=False, auto_now_add=False, default=now)
     location = models.TextField(default='Work Workouts Gym')
 

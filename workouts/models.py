@@ -4,6 +4,7 @@ from instructors.models import Instructor
 
 class Workout_Session(models.Model):
     name = models.CharField(max_length=254)
+    sku = models.CharField(max_length=254, null=True, blank=True)
     description = models.TextField()
     place = models.TextField(default="Anywhere")
     price = models.DecimalField(max_digits=6, decimal_places=2, null=True)

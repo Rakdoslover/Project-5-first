@@ -16,7 +16,18 @@
             <hr class="w-50 mb-1" />
         </div>
     </div>
-
+    {% if request.user.is_superuser %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <a href="{% url 'add_session' %}" class="post-link">
+                    <h2 class="logo-font add-logo"><strong>Add New a Session</strong></h2>
+                </a>
+                <hr />
+            </div>
+        </div>
+    </div>
+    {% endif %}
     <!-- Part to iterate through each sessions -->
 
     <div class="row">

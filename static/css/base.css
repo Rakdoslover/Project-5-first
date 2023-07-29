@@ -11,7 +11,16 @@ body {
     z-index: 99999;
 }
 
+a {
+    color: #555;
+    text-decoration: none;
+}
 
+a:hover {
+    color: rgb(8, 138, 116);
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /* from Bulma */
 .icon {
@@ -161,6 +170,7 @@ body {
     max-width: auto;
     max-height: auto;
 }
+
 
 /* -------------------------------- Media Queries */
 
