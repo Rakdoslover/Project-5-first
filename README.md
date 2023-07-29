@@ -21,7 +21,7 @@ constumers to book time and place.
 
 ---
 
-### **[Repository](https://github.com/Rakdoslover/project-4-story)**
+### **[Repository](https://github.com/Rakdoslover/Project-5-first)**
 
 ---
 ## Table of contents
@@ -40,7 +40,7 @@ constumers to book time and place.
 ## UX
 <a name="ux"></a>
 
-![Lucid Chart](/media/pictures/database-structure.jpg)
+![Lucid Chart](/media/database-structure.jpg)
 
 ### Database Structure
 #### UserProfile
@@ -387,13 +387,44 @@ Logout Page   | Size to 1920px using Chrome Dev Tools | Elements look good @ 192
 
 #### Pip8 Validation
 - [CI Python Linter](https://pep8ci.herokuapp.com/)
-    - [settings.py](/media/pictures/settings.jpg)
-    - [forms.py](/media/pictures/forms.jpg)
-    - [models.py](/media/pictures/models.jpg)
-    - [urls.py](/media/pictures/urls.jpg)
-    - [views.py](/media/pictures/views.jpg)
-        - No errors in code except settings.
-        - The settings still shows 5 lines that're too long. These will not be correct due to them being installed/written by DJango. 
+##### Project Five App
+- [settings.py](/media/settings.jpg)
+- [urls.py](/media/main-urls.jpg)
+- The settings still shows 4 lines that're too long. These will not be correct due to them being installed/written by DJango. 
+##### Bag App
+- [context.py](/media/bag-contexts.jpg)
+- [urls.py](/media/bag-urls.jpg)
+- [views.py](/media/bag-views.jpg)
+- No errors found
+##### Checkout App
+- [forms.py](/media/checkout-forms.jpg)
+- [models.py](/media/checkout-models.jpg)
+- [urls.py](/media/checkout-urls.jpg)
+- [views.py](/media/checkout-views.jpg)
+##### Events App
+- [forms.py](/media/events-forms.jpg)
+- [models.py](/media/events-models.jpg)
+- [urls.py](/media/events-urls.jpg)
+- [views.py](/media/events-views.jpg)
+##### Home App
+- [urls.py](/media/home-urls.jpg)
+- [views.py]()
+##### Instructors App
+- [models.py](/media/instructors-models.jpg)
+- [urls.py](/media/instructors-urls.jpg)
+- [views.py](/media/instructors-views.jpg)
+##### Profiles App
+- [forms.py](/media/profiles-forms.jpg)
+- [models.py](/media/profiles-models.jpg)
+- [urls.py](/media/profiles-urls.jpg)
+- [views.py](/media/profiles-views.jpg)
+##### Workouts App
+- [forms.py](/media/workouts-forms.jpg)
+- [models.py](/media/workouts-models.jpg)
+- [urls.py](/media/workouts-urls.jpg)
+- [views.py](/media/workouts-views.jpg)
+- No errors in code except settings.
+
 
 [Back to Top of page](#tcontents)
 

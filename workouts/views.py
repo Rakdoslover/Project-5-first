@@ -75,7 +75,8 @@ def edit_session(request, workout_session_id):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated session!')
-            return redirect(reverse('session_detail', args=[workout_session.id]))
+            return redirect(reverse('session_detail',
+                                    args=[workout_session.id]))
         else:
             messages.error(
                 request, 'Failed to update session.'

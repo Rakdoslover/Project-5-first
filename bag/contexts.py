@@ -24,8 +24,6 @@ def bag_contents(request):
         else:
             session = get_object_or_404(Workout_Session, pk=item_id)
 
-   
-
     grand_total = total
 
     context = {
