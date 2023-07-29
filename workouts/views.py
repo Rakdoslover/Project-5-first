@@ -62,45 +62,46 @@ def add_session(request):
 
 
 @login_required
-def edit_session(request, session_id):
+def edit_session(request, workout_session_id):
     """ Edit a session in the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    session = get_object_or_404(Workout_Session, pk=session_id)
+    workout_session = get_object_or_404(Workout_Session, pk=workout_session_id)
     if request.method == 'POST':
-        form = WorkoutSessionForm(request.POST, request.FILES, instance=session)
+        form = WorkoutSessionForm(
+            request.POST, request.FILES, instance=workout_session)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated session!')
-            return redirect(reverse('session_detail', args=[session.id]))
+            return redirect(reverse('session_detail', args=[workout_session.id]))
         else:
             messages.error(
                 request, 'Failed to update session.'
                 'Please ensure the form is valid.'
-                )
+            )
     else:
-        form = WorkoutSessionForm(instance=session)
-        messages.info(request, f'You are editing {session.name}')
+        form = WorkoutSessionForm(instance=workout_session)
+        messages.info(request, f'You are editing {workout_session.name}')
 
     template = 'workouts/edit_session.html'
     context = {
         'form': form,
-        'session': session,
+        'workout_session': workout_session,
     }
 
     return render(request, template, context)
 
 
 @login_required
-def delete_session(request, session_id):
-    """ Delete a product from the store """
+def delete_session(request, workout_session_id):
+    """ Delete a session from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    session = get_object_or_404(Workout_Session, pk=session_id)
-    product.delete()
+    workout_session = get_object_or_404(Workout_Session, pk=workout_session_id)
+    workout_session.delete()
     messages.success(request, 'Session deleted!')
     return redirect(reverse('our_sessions'))

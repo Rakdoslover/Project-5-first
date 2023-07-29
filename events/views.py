@@ -93,7 +93,7 @@ def edit_event(request, event_id):
 
 
 @login_required
-def delete_event(request, product_id):
+def delete_event(request, event_id):
     """ Delete an event from the page """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
