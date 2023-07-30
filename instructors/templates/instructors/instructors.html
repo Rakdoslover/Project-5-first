@@ -26,48 +26,28 @@
             <div class="row mt-1 mb-2"></div>
             <div class="row">
                 {% for instructor in instructors %}
-                <div class="col-6 col-m-12 col-sm-12">
-                    <div class="card h-150 border-0 image-container">
-                        {% if instructor.image %}
-                        <img class="card-img-top img-fluid h-150" src=" ../../../media/{{ instructor.image  }}"
-                            alt="{{ instructor.name }}">
-                        {% else %}
-                        <img class="card-img-top img-fluid h-150" src="/media/noimage.png" alt="{{ instructor.name }}">
-                        {% endif %}
+                    <div class="col-6 col-m-12 col-sm-12">
+                        <div class="card h-150 border-0 image-container">
+                            {% if instructor.image %}
+                            <img class="card-img-top img-fluid h-150" src=" ../../../media/{{ instructor.image  }}"
+                                alt="{{ instructor.name }}" style="max-height: fit-content;">
+                            {% else %}
+                            <img class="card-img-top img-fluid h-150" src="/media/noimage.png" alt="{{ instructor.name }}">
+                            {% endif %}
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-6 col-m-12 col-sm-12">
-                    <div class="card h-150 border-0">
-                        <hr class="w-50 mb-0">
-                        <span class="bg-white pt-0 border-0">
-                            <p><strong>Name: </strong>{{ instructor.name }}</p>
-                            <p><strong>Main Sessions: </strong>{{ instructor.sessions }}</p>
-                            <p><strong>Years Of Experience: </strong>{{ instructor.years_of_experience }}</p>
-                            <p><strong>Encouraging words: </strong>{{ instructor.words_from_the_instructor }}</p>
-                        </span>
+                    <div class="col-6 col-m-12 col-sm-12">
+                        <div class="card h-150 border-0">
+                            <hr class="w-50 mb-0">
+                            <span class="bg-white pt-0 border-0">
+                                <p><strong>Name: </strong>{{ instructor.name }}</p>
+                                <p><strong>Main Sessions: </strong>{{ instructor.sessions }}</p>
+                                <p><strong>Years Of Experience: </strong>{{ instructor.years_of_experience }}</p>
+                                <p><strong>Encouraging words: </strong>{{ instructor.words_from_the_instructor }}</p>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                {% if forloop.counter|divisibleby:1 %}
-                <div class="col-12 d-sm-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:2 %}
-                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:3 %}
-                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:4 %}
-                <div class="col-12 d-none d-xl-block mb-5">
-                    <hr>
-                </div>
-                {% endif %}
                 {% endfor %}
             </div>
         </div>
