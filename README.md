@@ -688,7 +688,7 @@ installed on the system. I've tried moving them but only gotten more errors.
 ##### Code Institute
 
 - Course content for portfolio project 4 helped greatly in being able to complete this project.
-- Initial structure **based heavily** on the CI walkthrough of the "I Think Therefore I Blog".
+- Initial structure **based heavily** on the CI walkthrough of the "Boutique Ado".
 - Legacy code regarding Base/index.html and accompaning CSS remains.
 
 [Back to Top of page](#tcontents)
@@ -701,10 +701,10 @@ installed on the system. I've tried moving them but only gotten more errors.
 
 ##### Code institue Django3blog
 
-- I started the project using the blog template from https://github.com/Code-Institute-Solutions/Django3blog
+- I started the project using the blog template from https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/c82c677a83756a84c24181ed124e50ad38de67cf
 - This gave me a guide how to develop the project, install all parts and deploy to Heroku.
 - It also gave me the starting baseline for my inital CSS/settings/url/models/Base and Index template/admin and start view functions.
-- I copied and used the Allauth templates for sign-up/-in/-out
+- I copied and used the Allauth templates for sign-up/-in/-out, these were not the main focus of my site this time around.
 - This allowed me to test with trial and error (with django documentations and stackoverflow as my handbook).
 
 ##### Mentoring
@@ -746,7 +746,6 @@ So for this project I've leaned on the documentation quite heavliy, I've tried t
 
 Used to following sites to get some stock images for my pages:
 
-- [Stockvault.net](https://www.stockvault.net/)
 - [Stockvault.net](https://www.stockvault.net/)
 - [Unsplash.com](https://unsplash.com/)
 
