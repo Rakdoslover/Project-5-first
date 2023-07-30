@@ -182,13 +182,15 @@ Down below you can find both the fulfilled stories but also those not completed.
 
 ##### Completed
 
-1. [USER STORY: Create Account]()
-2. [USER STORY: Admin Page](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34561980)
-3. [USER STORY: Site Pagination]()
-4. [USER STORY: Create Comment]()
-5. [USER STORY: Deploy the Site]()
-6. [USER STORY: UD Comments]()
-7. [USER STORY: View Comments]()
+1. [USER STORY: View and Bag Sessions (Must-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34566714)
+2. [USER STORY: Admin Page (Must-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34561980)
+3. [USER STORY: View Instructors (Should-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34566881)
+4. [USER STORY: Upcoming Events (Should-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34567113)
+5. [USER STORY: CRUD Sessions and Events (Must-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34567578)
+6. [USER STORY: Admin Login Frontend (Must-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34568010)
+7. [USER STORY: Create Account (Should-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34568128)
+8. [USER STORY: Purchase Session (Must-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34568300)
+9. [USER STORY: View Comments]()
 
 ##### Uncompleted
 
