@@ -18,7 +18,7 @@ if os.path.exists("env.py"):
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -31,8 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-    'https://project-5-first-a9f5854c68ec.herokuapp.com',
     '8000-rakdoslover-project-5-fi-zy2blpdei7.us2.codeanyapp.com',
+    'project-5-first-a9f5854c68ec.herokuapp.com',
 ]
 
 

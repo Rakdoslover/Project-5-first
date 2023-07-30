@@ -489,7 +489,7 @@ A large hero-image takes up the rest of the page.
 
 And here we have it opened and scaled down to 320px width.
 The navbar is opened to show how it looks downscaled.
-![Home Page 320px]()
+![Home Page 320px](/media/main-page-320.jpg)
 
 #### Our Sessions page
 
@@ -606,6 +606,11 @@ And here we have it opened and scaled down to 320px width.
 
 <a name="fbprofile"></a>
 
+Here we have the Facebook page for the Work Workouts.
+On this page customer/visitors/fellow enthusiasts can see the basic info of from our main
+site, like different sessions provided, some info on our gym and future events.
+![Facebook Profile]()
+
 [Back to Top of page](#tcontents)
 
 ---
@@ -616,63 +621,44 @@ And here we have it opened and scaled down to 320px width.
 
 ---
 
-<strong>1. Poll:</strong>
-The initial idea was to create a poll for the user to voted on 1 of 2 choices
-the story would take, at the end of the week the author would pick the choice
-with the most votes and for the next chapter he/she would write it accordingly.
+<strong>1. Booking System for events:</strong>
+We would like to implement a booking system where you can book your group/
+colleagues directly onto the event you guys want to partake in.
 
-I started implementing this idea but never got past an issue were users could
-vote multiple times and also vote for both. This is something I would like to
-implement in the future because I like the idea of the user pushing the story
-forward together with the author.
+This can be done with a similar purchase system as on the sessions page but when
+you fill in the number of attendees you can see how many spots are left.
 
-<strong>2. Reaction instead of likes:</strong>
-I would be cool if the user would be able to express more than just a like.
-Lets say the theme of the chapter was happiness/success, the user could express
-a happy face. the same would be true about a chapter which had a theme of
-sorrow they could express a sad face.
+<strong>2. Customer Interaction</strong>
+Another thing we're looking into is getting an interaction wall, like a bulletin board
+where our customers can post their experiences and pictures from their own sessions.
 
-This idea only came to the idea stage, I thought about it but never really
-looked in to how I would implement it. Maybe it would be in the same manor as
-the likes system we did in the walkthrough for the blog but I'm not sure.
+This can be done with a comment system like a flow or review cards popping up randomly
+from time to time.
+This can also be done under each kind of session, like a rating system. Although,
+if you're posting under an individual session you need to first press each session
+to access peoples general thoughts.
+We'll have to think a little more on this one.
 
-<strong>3. Comment on comment:</strong>
-Another cool thing for my users would be if they could comment each others
-comment, and give likes to other peoples suggested titles and images.
-This would create a deeper "community" interactivity between users.
+<strong>3. Chat/Contact Function</strong>
+This is the next step after the bulletin board to integrate some sort of chat function,
+either we us as instructor/admins or with customer service.
 
-Just like the idea number 2, this one was only just an idea. It's a cool system,
-sort of like comment system found on most sites like 9gag, reddit, etc..
-I might look into the further on but at the moment it would be out of the scope
-for this portfolio project.
+Which direction we're going here depends on how the first interaction goes.
 
-<strong>4. User costumization:</strong>
-I would like the users to have a chance to customize their own profiles, lets
-say we're going to add a smaller shop och subscription profile to the site, it
-would be a good idea for the users to have more control over their own pages.
-
-This one doesn't seem far off as I think I will be able to apply this soon after
-the E-commerce section is done.
 
 ### Problems/Errors left
 
 #### Disclaimer:
 
-There are 5 error indicating lines that're too long in my settings.py file,
+There are 4 errors indicating lines that're too long in my settings.py file,
 I've intentionally left them in because they were created when django was
 installed on the system. I've tried moving them but only gotten more errors.
 
 <strong>Problem 1: Remains</strong>
-Through my whole development process I've had this issue with a class "Chapter"
-that still says it contains no objects. I've tried my best can't seem to solve
-this issue.
+
 
 <strong>Problem 2: Resolved</strong>
-For a long time I didn't understand how to get the files from allauth copied for
-my workspace. This coupled with the fact that I copied them manually made it
-impossible to redirect the right static to the files.
-It took both help from tutors and the slack community to address the issue but
-it was resolved at last.
+
 
 [Back to Top of page](#tcontents)
 
@@ -688,7 +674,7 @@ it was resolved at last.
 
 ##### Geeks for Geeks.com
 
-- Used their walkthroughs and tips to get the CRUD just right for the comments CRUD by user.
+- Used their walkthroughs and tips to get the CRUD just right for the sessions/events CRUD by admin.
 
 ##### Stackoverflow
 
