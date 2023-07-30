@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-    'project-5-first-a9f5854c68ec.herokuapp.com',
+    'https://project-5-first-a9f5854c68ec.herokuapp.com',
     '8000-rakdoslover-project-5-fi-zy2blpdei7.us2.codeanyapp.com',
 ]
 
