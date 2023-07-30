@@ -24,152 +24,157 @@ constumers to book time and place.
 ### **[Repository](https://github.com/Rakdoslover/Project-5-first)**
 
 ---
+
 ## Table of contents
+
 <a name="tcontents">Back to Top</a>
- 1. [ UX ](#ux)
- 2. [ User Stories ](#userstories)
- 3. [ Features ](#features)
- 4. [ Technology Used ](#tech)  
- 5. [ Testing ](#testing)   
- 6. [ Screenshots ](#screenshots) 
- 7. [ Future Implemetations ](#future)  
- 8. [ Content ](#content)  
- 9. [ Credits](#credits) 
- 10. [ Acknowledgements](#acknowledgements)
+
+1.  [ UX ](#ux)
+2.  [ User Stories ](#userstories)
+3.  [ Features ](#features)
+4.  [ Technology Used ](#tech)
+5.  [ Testing ](#testing)
+6.  [ Screenshots ](#screenshots)
+7.  [ Facebook Profile ](#fbprofile)
+8.  [ Future Implemetations ](#future)
+9.  [ Content ](#content)
+10. [ Credits](#credits)
+11. [ Acknowledgements](#acknowledgements)
 
 ## UX
+
 <a name="ux"></a>
 
 ![Lucid Chart](/media/database-structure.jpg)
 
 ### Database Structure
+
 #### UserProfile
 
-| id | Field |
-|--|--|
-| user | OneToOneField |
-| default_phone_number | Charfield |
-| default_street_address1 | Charfield |
-| default_street_address2 | Charfield |
-| default_town_or_city | Charfield |
-| default_county | Charfield |
-| default_postcode | Charfield |
-| default_country | CountryField |
+| id                      | Field         |
+| ----------------------- | ------------- |
+| user                    | OneToOneField |
+| default_phone_number    | Charfield     |
+| default_street_address1 | Charfield     |
+| default_street_address2 | Charfield     |
+| default_town_or_city    | Charfield     |
+| default_county          | Charfield     |
+| default_postcode        | Charfield     |
+| default_country         | CountryField  |
 
 ---
 
 #### Order Model
 
-| id | Field |
-|--|--|
-| order_number | CharField |
-| user_profile | Foreignkey |
-| full_name | CharField |
-| email | EmailField |
-| phone_number | CharField |
-| country | CountryField |
-| postcode | CharField |
-| town_or_city | CharField |
-| street_address1 | CharField |
-| street_address2 | CharField |
-| county | CharField |
-| date | DateTimeField |
-| order_total | DecimalField |
-| grand_total | DecimalField |
-| original_bag | TextField |
-| stripe_pid | CharField |
+| id              | Field         |
+| --------------- | ------------- |
+| order_number    | CharField     |
+| user_profile    | Foreignkey    |
+| full_name       | CharField     |
+| email           | EmailField    |
+| phone_number    | CharField     |
+| country         | CountryField  |
+| postcode        | CharField     |
+| town_or_city    | CharField     |
+| street_address1 | CharField     |
+| street_address2 | CharField     |
+| county          | CharField     |
+| date            | DateTimeField |
+| order_total     | DecimalField  |
+| grand_total     | DecimalField  |
+| original_bag    | TextField     |
+| stripe_pid      | CharField     |
 
 ---
 
 #### OrderLineItem Model
 
-| id | Field |
-|--|--|
-| order | ForeignKey |
-| workouts | ForeignKey |
-| quantity | IntegerField |
+| id             | Field        |
+| -------------- | ------------ |
+| order          | ForeignKey   |
+| workouts       | ForeignKey   |
+| quantity       | IntegerField |
 | lineitem_total | DecimalField |
 
 ---
 
 #### Event Model
 
-| id | Field |
-|--|--|
-| title | CharField |
-| slug | SlugField |
+| id             | Field           |
+| -------------- | --------------- |
+| title          | CharField       |
+| slug           | SlugField       |
 | featured_image | CloudinaryField |
-| excerpt | TextField |
-| updated_on | DateTimeField |
-| content | TextField |
-| created_on | DateTimeField |
-| date | DateTimeField |
-| time | TimeField |
-| location | TextField |
+| excerpt        | TextField       |
+| updated_on     | DateTimeField   |
+| content        | TextField       |
+| created_on     | DateTimeField   |
+| date           | DateTimeField   |
+| time           | TimeField       |
+| location       | TextField       |
 
 ---
 
 #### Instructor Model
 
-| id | Field |
-|--|--|
-| name | CharField |
-| sessions | TextField |
-| years_of_experience | IntegerField |
-| words_from_the_instructor | TextField |
-| image_url | URLField |
-| image | ImageField |
+| id                        | Field        |
+| ------------------------- | ------------ |
+| name                      | CharField    |
+| sessions                  | TextField    |
+| years_of_experience       | IntegerField |
+| words_from_the_instructor | TextField    |
+| image_url                 | URLField     |
+| image                     | ImageField   |
 
 ---
 
 #### Instructor Model
 
-| id | Field |
-|--|--|
-| name | CharField |
-| sku | CharField |
-| description | TextField |
-| place | DecimalField |
-| instructors | TextField |
-| image_url | URLField |
-| image | ImageField |
+| id          | Field        |
+| ----------- | ------------ |
+| name        | CharField    |
+| sku         | CharField    |
+| description | TextField    |
+| place       | DecimalField |
+| instructors | TextField    |
+| image_url   | URLField     |
+| image       | ImageField   |
 
 ---
-
 
 [Back to Top of page](#tcontents)
 
 ---
 
 ## User Stories and Project
+
 <a name="userstories"></a>
 
 ### Goal
+
 ---
-The main goal for this project is to create a user friendly site with a simple
-authentication login/signup and a place interactive storytelling platform.
-Users are supposed to read the chapters published and dependeing on the theme of
-the story post a comment with a proposed title and a featured image with connections
-to the them of the text.
-The comments are, if you're authorized and logged in, CRUD friendly.
+
+The main goal for this project is to create a user friendly site with simple navbar
+and a place for businesses to purchase workout sessions.
+The users/customers are browsing the different types of sessions, our instructors
+and upcoming events hosted by Work Workouts.
+Users can choose a product7session, take it through to the bag and from there to
+the checkout. If the user has a registered account they can then see their order
+on their profile site.
 
 ### Agile Project
+
 ---
+
 This project was started alongside a GitHub Projects Page to track issues that I had to solve further on.
-The initial aim was to track steps and features needed to get the functionallity and layout as per project goal. 
-I wrote epics with different themes according to what the user/admin/author wanted
+The initial aim was to track steps and features needed to get the functionallity and layout as per project goal.
+I wrote epics with different themes according to what the user/admin wanted
 to be able to do.
 
 ---
+
 To see Kanban please click [here]()
 
-I recognized 7 epics that would make the site work in the way I wanted and needed.
-I also got 1 story I would like to have implemented but couldn't find time for.
-
-For these 7, I made issues through the "project 4 story" Project on repository.
-The plan was to make them all at first and cross them out as the project progressed,
-but at times I got stuck on problems not forseen, which caused me to cross them off
-a little more haphazardly.
 
 #### User stories
 
@@ -178,7 +183,7 @@ Down below you can find both the fulfilled stories but also those not completed.
 ##### Completed
 
 1. [USER STORY: Create Account]()
-2. [USER STORY: Admin Page]()
+2. [USER STORY: Admin Page](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34561980)
 3. [USER STORY: Site Pagination]()
 4. [USER STORY: Create Comment]()
 5. [USER STORY: Deploy the Site]()
@@ -194,6 +199,7 @@ Down below you can find both the fulfilled stories but also those not completed.
 ---
 
 ## Features
+
 <a name="features"></a>
 
 #### Users can:
@@ -202,7 +208,7 @@ Down below you can find both the fulfilled stories but also those not completed.
 - **Users can** log into their account
 - **Users can** log out of their account
 - **Users can** create comment on chapter **(Create)**
-- **Users can** read comments from other members *(**Read**)
+- **Users can** read comments from other members \*(**Read**)
 - **Users can** view chapters from home page (**Read**)
 - **Users can** edit their own comments (**Update**)
 - **Users can** delete their own comments (**Delete**)
@@ -213,7 +219,7 @@ Down below you can find both the fulfilled stories but also those not completed.
 - **Users cannot** post comments without an account or being logged in.
 - **Users cannot** edit comments they've made previously without being logged in.
 - **Users cannot** access the admin panel of the website unless they have admin status.
-- **Users cannot** 
+- **Users cannot**
 
 #### Website Features
 
@@ -233,303 +239,379 @@ Down below you can find both the fulfilled stories but also those not completed.
 
 ---
 
+## Technology Used
 
-##  Technology Used
 <a name="tech"></a>
 
 ---
 
 ### Html
 
- - Used to structure my webpages and the base templating language.
+- Used to structure my webpages and the base templating language.
 
 ### CSS
 
- - Custom CSS was written on bits to make it stick out but played a background role over functionality.
+- Custom CSS was written on bits to make it stick out but played a background role over functionality.
 
 ### Python
 
- -  Used for the logic in this project.
+- Used for the logic in this project.
 
 ### Django
 
- -  Framework used to build this project. Provides a ready installed admin panel and includes many helper template tags that make writing code quick and efficient.
+- Framework used to build this project. Provides a ready installed admin panel and includes many helper template tags that make writing code quick and efficient.
 
 ### Bootstrap 5
- - Used as the base front end framework to work alongside Django.
+
+- Used as the base front end framework to work alongside Django.
 
 ### Allauth
- - To implement quick and easy user registration and login, modified after implemetations
+
+- To implement quick and easy user registration and login, modified after implemetations
 
 ### GitHub
- - Used to store the code for this project & for the projects Kanban board used to complete it.
+
+- Used to store the code for this project & for the projects Kanban board used to complete it.
 
 ### Heroku
+
 - Used to host and deploy this project.
 
 ### ElephanSQL
+
 - Heroku PostgreSQL was used as the database for this project during development and in production.
 
 ### Cloudinary
+
 - Used to host the static files for this project including users featured images.
 
 ### Git
+
 - Used for version control throughout the project and to ensure a good clean record of work done was maintained.
 
 ### Lucidcharts
-- Used for to visulize the database structure
 
+- Used for to visulize the database structure
 
 [Back to Top of page](#tcontents)
 
 ---
 
 ## Testing
+
 <a name="testing"></a>
 
 Tested the site on Google Chrome and Microsoft Edge, both of them worked the same
 with the tests provided below.
 
 ### Main Site Testing
-**TESTING** | **ACTION** | **EXPECTATION** | **RESULT**
-----------|----------|----------|----------
-Home Page   | Size to 320px using Chrome Dev Tools | Elements look good @ 320px | Works as expected
-Home Page	| Size to 1920px using Chrome Dev Tools | Elements look good @ 1920px | Works as expected
-Login form | Click "Signin" button without data in form fields | Cannot submit form | Works as expected
-Logout form | Click "Signout" button | Submits form and logs out user | Works as expected
-Signup form | Click "Signup" button without data in form fields | Cannot submit form | Works as expected
-Nav bar - home page | Click home button | Home button takes me to the home page | Works as expected
-Nav bar - register page | Click register button | Register button takes me to the signup page | Works as expected
-Nav bar - login page | Click login button | Login button takes me to the signin page | Works as expected
-Nav bar - logout page | Click logout button | Logout button takes me to the signout page | Works as expected
-Chapter Page   | Size to 320px using Chrome Dev Tools | Elements look good @ 320px | Works as expected
-Chapter Page   | Size to 1920px using Chrome Dev Tools | Elements look good @ 1920px | Works as expected
-Login Page   | Size to 320px using Chrome Dev Tools | Elements look good @ 320px | Works as expected
-Login Page   | Size to 1920px using Chrome Dev Tools | Elements look good @ 1920px | Works as expected
-Signup Page   | Size to 320px using Chrome Dev Tools | Elements look good @ 320px | Works as expected
-Signup Page   | Size to 1920px using Chrome Dev Tools | Elements look good @ 1920px | Works as expected
-Logout Page   | Size to 320px using Chrome Dev Tools | Elements look good @ 320px | Works as expected
-Logout Page   | Size to 1920px using Chrome Dev Tools | Elements look good @ 1920px | Works as expected
+
+| **TESTING**             | **ACTION**                                        | **EXPECTATION**                             | **RESULT**        |
+| ----------------------- | ------------------------------------------------- | ------------------------------------------- | ----------------- |
+| Home Page               | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Home Page               | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Login form              | Click "Signin" button without data in form fields | Cannot submit form                          | Works as expected |
+| Logout form             | Click "Signout" button                            | Submits form and logs out user              | Works as expected |
+| Signup form             | Click "Signup" button without data in form fields | Cannot submit form                          | Works as expected |
+| Nav bar - home page     | Click home button                                 | Home button takes me to the home page       | Works as expected |
+| Nav bar - register page | Click register button                             | Register button takes me to the signup page | Works as expected |
+| Nav bar - login page    | Click login button                                | Login button takes me to the signin page    | Works as expected |
+| Nav bar - logout page   | Click logout button                               | Logout button takes me to the signout page  | Works as expected |
+| Chapter Page            | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Chapter Page            | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Login Page              | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Login Page              | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Signup Page             | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Signup Page             | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Logout Page             | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Logout Page             | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
 
 ### Account Registration
-| Test | Result |
-|--|--|
-| User can create account |Pass|
-| User can log into account |Pass|
-| User can log out of account |Pass|
+
+| Test                        | Result |
+| --------------------------- | ------ |
+| User can create account     | Pass   |
+| User can log into account   | Pass   |
+| User can log out of account | Pass   |
 
 ---
 
-### Chapter and Pagination 
-| Test | Result |
-|--|--|
-| User can open each chapter paginated on the site |Pass|
-| User can go back and forth between sites with Next/Prev-button |Pass|
-| User can see chapters without being logged in |Pass|
+### Chapter and Pagination
+
+| Test                                                           | Result |
+| -------------------------------------------------------------- | ------ |
+| User can open each chapter paginated on the site               | Pass   |
+| User can go back and forth between sites with Next/Prev-button | Pass   |
+| User can see chapters without being logged in                  | Pass   |
 
 ---
 
 ### Nav Bar
-| Test | Result |
-|--|--|
-| Users can engage with the nav bar on the home page | Pass |
-| Users can engage with the nav bar on each of the login/logout/signup pages | Pass |
-| Users can engage with the nav bar on the chapter detail page | Pass |
+
+| Test                                                                       | Result |
+| -------------------------------------------------------------------------- | ------ |
+| Users can engage with the nav bar on the home page                         | Pass   |
+| Users can engage with the nav bar on each of the login/logout/signup pages | Pass   |
+| Users can engage with the nav bar on the chapter detail page               | Pass   |
 
 ---
 
 ### Create Comment and Read Comments
-| Test | Result |
-|--|--|
-| Authorized users can comment on a specific chapter | Pass |
-| All users can read comments posted by authorized users | Pass |
+
+| Test                                                   | Result |
+| ------------------------------------------------------ | ------ |
+| Authorized users can comment on a specific chapter     | Pass   |
+| All users can read comments posted by authorized users | Pass   |
 
 ---
 
 ### Update Comment and Delete Comment
-| Test | Result |
-|--|--|
-| Authorized users can update a previously published comment they own | Pass |
-| Authorized users can delete a previously published comment they own | Pass |
+
+| Test                                                                | Result |
+| ------------------------------------------------------------------- | ------ |
+| Authorized users can update a previously published comment they own | Pass   |
+| Authorized users can delete a previously published comment they own | Pass   |
 
 ---
 
 #### Admin Tests
 
-| Test | Result  |
-|--|--|
-| Admin can add chapters from adminpanel |Pass|
-| Admin can add comments from adminpanel |Pass|
-| Admin can update chapters from adminpanel |Pass|
-| Admin can update comments from adminpanel |Pass|
-| Admin can delete chapters from adminpanel |Pass|
-| Admin can delete comments from adminpanel |Pass|
-| Admin can create/update/delete user profiles from adminpanel |Pass|
+| Test                                                         | Result |
+| ------------------------------------------------------------ | ------ |
+| Admin can add chapters from adminpanel                       | Pass   |
+| Admin can add comments from adminpanel                       | Pass   |
+| Admin can update chapters from adminpanel                    | Pass   |
+| Admin can update comments from adminpanel                    | Pass   |
+| Admin can delete chapters from adminpanel                    | Pass   |
+| Admin can delete comments from adminpanel                    | Pass   |
+| Admin can create/update/delete user profiles from adminpanel | Pass   |
 
 ---
 
 ### Validators
 
 #### HTML
+
 - [W3C HTML Validator](https://validator.w3.org/)
-    - Checked all HTML-fiels checked.
-    - Had minor errors mostly called by the django templating inside the HTML.
-        - Errors corrected by [commit: b15573e](https://github.com/Rakdoslover/project-4-story/commit/b15573e31dafd501b9720b6330692526b2dfd3d4)
-        - The remaining validation issues are all attributed to Django Templating not being recognized by W3C:
-            - **Warning**: Consider adding a `lang` attribute to the `html` start tag to declare the language of this document
-            - **Error**: Non-space characters found without seeing a doctype first. Expected `<!DOCTYPE html>`
-            - **Warning**: This document appears to be written in English. Consider adding `lang="en"` (or variant) to the `html` start tag
-            - **Error**: Element `head` is missing a required instance of child element `title`
+  - Checked all HTML-fiels checked.
+  - Had minor errors mostly called by the django templating inside the HTML.
+    - Errors corrected by [commit: b15573e](https://github.com/Rakdoslover/project-4-story/commit/b15573e31dafd501b9720b6330692526b2dfd3d4)
+    - The remaining validation issues are all attributed to Django Templating not being recognized by W3C:
+      - **Warning**: Consider adding a `lang` attribute to the `html` start tag to declare the language of this document
+      - **Error**: Non-space characters found without seeing a doctype first. Expected `<!DOCTYPE html>`
+      - **Warning**: This document appears to be written in English. Consider adding `lang="en"` (or variant) to the `html` start tag
+      - **Error**: Element `head` is missing a required instance of child element `title`
 
 #### CSS
+
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri)
-    - No errors found.
+  - No errors found.
 
 #### Pip8 Validation
+
 - [CI Python Linter](https://pep8ci.herokuapp.com/)
+
 ##### Project Five App
+
 - [settings.py](/media/settings.jpg)
 - [urls.py](/media/main-urls.jpg)
-- The settings still shows 4 lines that're too long. These will not be correct due to them being installed/written by DJango. 
+- The settings still shows 4 lines that're too long. These will not be correct due to them being installed/written by DJango.
+
 ##### Bag App
+
 - [context.py](/media/bag-contexts.jpg)
 - [urls.py](/media/bag-urls.jpg)
 - [views.py](/media/bag-views.jpg)
 - No errors found
+
 ##### Checkout App
+
 - [forms.py](/media/checkout-forms.jpg)
 - [models.py](/media/checkout-models.jpg)
 - [urls.py](/media/checkout-urls.jpg)
 - [views.py](/media/checkout-views.jpg)
+
 ##### Events App
+
 - [forms.py](/media/events-forms.jpg)
 - [models.py](/media/events-models.jpg)
 - [urls.py](/media/events-urls.jpg)
 - [views.py](/media/events-views.jpg)
+
 ##### Home App
+
 - [urls.py](/media/home-urls.jpg)
 - [views.py]()
+
 ##### Instructors App
+
 - [models.py](/media/instructors-models.jpg)
 - [urls.py](/media/instructors-urls.jpg)
 - [views.py](/media/instructors-views.jpg)
+
 ##### Profiles App
+
 - [forms.py](/media/profiles-forms.jpg)
 - [models.py](/media/profiles-models.jpg)
 - [urls.py](/media/profiles-urls.jpg)
 - [views.py](/media/profiles-views.jpg)
+
 ##### Workouts App
+
 - [forms.py](/media/workouts-forms.jpg)
 - [models.py](/media/workouts-models.jpg)
 - [urls.py](/media/workouts-urls.jpg)
 - [views.py](/media/workouts-views.jpg)
 - No errors in code except settings.
 
-
 [Back to Top of page](#tcontents)
 
 ---
 
 ## Screenshots
+
 <a name="screenshots"></a>
 
 ---
 
 #### Home Page
+
 ---
+
 Main page of my site, this is where we draw our users attention.
-Here we can see the navbar with it's few but simple options(home, login & register),
-the latest chapters sorted by newest to oldest and at the bottom a small footer.
-![Home Page](/media/pictures/home-page.jpg)
+Here we can see the navbar with it's few but simple options(our sessions, instructors & events).
+A large hero-image takes up the rest of the page.
+![Home Page](/media/main-page.jpg)
+
 ##### Responsiveness Home Page
+
 ---
+
 And here we have it opened and scaled down to 320px width.
 The navbar is opened to show how it looks downscaled.
-![Home Page 320px](/media/pictures/home-page-320.jpg)
+![Home Page 320px]()
 
-#### Register Page
----
-The register/signup page is based on the Allauth templates with some modifications.
-It should be simple and easy to use, user should be able to just register a
-username and a password to get access to the comment section.
-![Register Page](/media/pictures/register-page.jpg)
+#### Our Sessions page
 
-##### Responsiveness Register Page
 ---
+
+The our sessions page is the equivalent of the "products" page in the walkthrough
+we did for Boutique Ado. It showcases the different sessions the customer can 
+choose from.
+![Our Sessions](/media/our-sessions.jpg)
+
+##### Responsiveness Our Sessions Page
+
+---
+
 And here we have it opened and scaled down to 320px width.
-![Register Page 320px](/media/pictures/register-page-320.jpg)
+![Our Sessions 320px](/media/our-sessions-320.jpg)
 
-#### Login page
----
-This is the login page for the users.
-A simple page that takes the user back to the home page after signing in.
-![Login Page](/media/pictures/login-page.jpg)
+#### Session Detail page
 
-#####  Responsiveness Login Page
 ---
+
+Here we have the details page, where the customer can choose the amount of sessions
+he/she wants to buy. 
+![Session Detail Page](/media/session-detail.jpg)
+
+##### Responsiveness Session Detail Page
+
+---
+
 And here we have it opened and scaled down to 320px width.
-![Login Page 320px](/media/pictures/login-page-320.jpg)
+![Session Detail Page 320px](/media/session-detail-320.jpg)
 
-#### Logout Page
----
-This is the logout page for the users.
-A simple page that takes the user back to the home page after signing out.
-![Logout Page](/media/pictures/logout-page.jpg)
+#### Instructors Page
 
-#####  Responsiveness Logout Page
 ---
+
+This is the instructors page showcasing our instructors.
+An info page, describing every instructors skillset and a word of encouragement.
+![Instructors Page](/media/instructors.jpg)
+
+##### Responsiveness Instructors Page
+
+---
+
 And here we have it opened and scaled down to 320px width.
-![Logout Page 320px](/media/pictures/logout-page-320.jpg)
+![Instructors Page 320px](/media/instructors-320.jpg)
 
-#### Chapter Page (upper)
----
-This is where most of the interaction happens.
-The chosen chapter, published by the author, is being displayed and the user can
-see the placeholder image from the author and the story down below.
-![Chapter Page upper](/media/pictures/chapter-text.jpg)
+#### Events Page
 
-#### Chapter Page (lower)
 ---
-Further down below the users can interact by uploading a proposed new title for
-this weeks chapter, and also upload an image symbolizing the story.
-This is where they can make use of the CRUD functionality for real.
-While logged in you can Create, Read, Update and Delete your own comments.
-![Chapter Page lower](/media/pictures/chapter-comment.jpg)
 
-##### Responsiveness Chapter Page
+On the events page the customers can see our future events.
+By pressing the event the can get to a more detailed page.
+![Events Page](/media/events.jpg)
+
+#### Responsiveness Events Page
+
 ---
+
 And here we have it opened and scaled down to 320px width.
-![Chapter Page 320px](/media/pictures/chapter-320.jpg)
+![Events Page 320px](/media/events-320.jpg)
 
-#### Update Page
----
-This is the Update page where the user can change their previous entries.
-After a valid new form has been submitted, the button will take them back to the site.
-This fulfills the U in CRUD.
-![Update Page](/media/pictures/update-page.jpg)
+##### Event Detail Page
 
-##### Responsiveness Update Page
 ---
+
+This is the page where the customer/site-visitors can see more information on the chosen event.
+![Event Detail Page](/media/event-detail.jpg)
+
+##### Event Detail Page
+
+---
+
 And here we have it opened and scaled down to 320px width.
-![Update Page 320px](/media/pictures/update-page-320.jpg)
+![Event Detail Page 320px](/media/event-detail-320.jpg)
 
-#### Delete Page
----
-This is the Delete page where the user can delete their own comment.
-After the button is pressed, it will take them back to the site.
-This fulfills the D in CRUD.
-![Delete Page](/media/pictures/delete-page.jpg)
+#### Bag Page
 
-##### Responsiveness Delete Page
 ---
+
+This is the Bag page where the user can see their chosen items.
+They can see a subtotal of each item, they can see a grand total, the can update
+and remove items and take the bag through a purchase.
+![Bag Page](/media/bag.jpg)
+
+##### Responsiveness Bag Page
+
+---
+
 And here we have it opened and scaled down to 320px width.
-![Delete Page 320px](/media/pictures/delete-page-320.jpg)
+![Bag Page 320px](/media/bag-320.jpg)
+
+#### Checkout Page
+
+---
+
+This is the Checkout page, the last step the user takes before getting their sessions.
+I've provided an upper and lower picture to get the whole thing.
+![Checkout Page Upper](/media/checkout-upper.jpg)
+![Checkout Page Lower](/media/checkout-lower.jpg)
+
+##### Responsiveness Checkout Page
+
+---
+
+And here we have it opened and scaled down to 320px width.
+![Checkout Page 320px](/media/checkout-320.jpg)
+
+[Back to Top of page](#tcontents)
+
+---
+
+## Facebook Profile
+
+<a name="fbprofile"></a>
 
 [Back to Top of page](#tcontents)
 
 ---
 
 ## Future Implementations
+
 <a name="future"></a>
 
 ---
@@ -597,72 +679,87 @@ it was resolved at last.
 ---
 
 ## Content
+
 <a name="content"></a>
-  
+
 ##### Django Documentation
-  - Read through the django documentation multiple times to get to grips with the basics regarding models.
+
+- Read through the django documentation multiple times to get to grips with the basics regarding models.
 
 ##### Geeks for Geeks.com
-  - Used their walkthroughs and tips to get the CRUD just right for the comments CRUD by user.
+
+- Used their walkthroughs and tips to get the CRUD just right for the comments CRUD by user.
 
 ##### Stackoverflow
-  - I've read an ocean of questions and answers on Stackoverflow, some helpful some worthless.
-    But when they actually helped me it really did the job.
-  
+
+- I've read an ocean of questions and answers on Stackoverflow, some helpful some worthless.
+  But when they actually helped me it really did the job.
+
 ##### W3 Schools
-  - Used for reference throughout for simple HTML/CSS examples.
-  
+
+- Used for reference throughout for simple HTML/CSS examples.
+
 ##### Code Institute
-  - Course content for portfolio project 4 helped greatly in being able to complete this project.
-  - Initial structure **based heavily** on the CI walkthrough of the "I Think Therefore I Blog".
-  - Legacy code regarding Base/index.html and accompaning CSS remains.
+
+- Course content for portfolio project 4 helped greatly in being able to complete this project.
+- Initial structure **based heavily** on the CI walkthrough of the "I Think Therefore I Blog".
+- Legacy code regarding Base/index.html and accompaning CSS remains.
 
 [Back to Top of page](#tcontents)
 
 ---
 
 ## Credits
+
 <a name="credits"></a>
 
 ##### Code institue Django3blog
+
 - I started the project using the blog template from https://github.com/Code-Institute-Solutions/Django3blog
 - This gave me a guide how to develop the project, install all parts and deploy to Heroku.
 - It also gave me the starting baseline for my inital CSS/settings/url/models/Base and Index template/admin and start view functions.
-- I copied and used the Allauth templates for sign-up/-in/-out 
+- I copied and used the Allauth templates for sign-up/-in/-out
 - This allowed me to test with trial and error (with django documentations and stackoverflow as my handbook).
 
 ##### Mentoring
+
 - I had a couple of down periods during this project and had a really hard time grasping exactly what I need, but my mentor allways pushed onwards.
 - She had some really cool ideas, tip and tricks for me to test, that includes documentation to read or videos to watch.
 
 ##### Tutor sessions
+
 - Those hard hours were made so much easier by the giant help of the tutors.
 - They've giving me alot of different ways to look at an issue and maybe getting it to work another way.
 
 ##### Various old students README-files
+
 - I've gotten some great tips from former students/lecturers on how to write the README.
 - They gave both tips on the structure but also the contents.
 
 [Back to Top of page](#tcontents)
 
-
 ## Acknowledgements
+
 <a name="acknowledgements"></a>
 
 ### My family
+
 - I haven't been very chearful the last couple of weeks but my family has allways managed to put a smile on my face during the hardest hours.
 
 [Back to Top of page](#tcontents)
 
-
 ## Resources
+
 <a name="resources"></a>
 
 #### Django documentation
+
 So for this project I've leaned on the documentation quite heavliy, I've tried to go a little more "solo" from the the walkthroughs we've done so far, so to lean on the documentation have been a savior.
 
 #### Free Stock images
+
 Used to following sites to get some stock images for my pages:
+
 - [Stockvault.net](https://www.stockvault.net/)
 - [Stockvault.net](https://www.stockvault.net/)
 - [Unsplash.com](https://unsplash.com/)

@@ -1,74 +1,74 @@
 [
-    {
-        "pk": 1,
-        "model": "instructors.instructor",
-        "fields": {
-            "name": "Valerie Johnson",
-            "sessions": "Yoga, Core Stability & Dance-Step",
-            "years_of_experience": "4",
-            "words_from_the_instructor": "I've been in the wellness business for a couple of years now and I love to the feeling you get of seeing happy faces at the end of a good workout sessions! You're going to enjoy every minute of it.",
-            "image_url": "https://unsplash.com/photos/ZvuK8YAJK0Y",
-            "image": "valerie-johnson.jpg"
-        }
-    },
-    {
-        "pk": 2,
-        "model": "instructors.instructor",
-        "fields": {
-            "name": "Kate Winfrey",
-            "sessions": "Core Stability, Team-Body-Pump & Team-HIIT",
-            "years_of_experience": "3",
-            "words_from_the_instructor": "Here at Work Workouts we're all about the team coming together, and I thrive on that. With us you guys are gonna get your heartbeats pumping and you muscles burning, and we'll do everything as a team. Strong together!",
-            "image_url": "https://unsplash.com/photos/ACbu5AY5Tvk",
-            "image": "kate-winfrey.jpg"
-        }
-    },
-    {
-        "pk": 3,
-        "model": "instructors.instructor",
-        "fields": {
-            "name": "Stephan Silva",
-            "sessions": "W-Spin & Team-Running",
-            "years_of_experience": "5",
-            "words_from_the_instructor": "Come join me in our state of the art spinning classes, we've got everything from elite to beginners. Whatever your level is, I promise you, we're going to have a lot of fun together!",
-            "image_url": "https://unsplash.com/photos/xdqBO0f2FoM",
-            "image": "stephan-silva.jpg"
-        }
-    },
-    {
-        "pk": 4,
-        "model": "instructors.instructor",
-        "fields": {
-            "name": "Adam Strong",
-            "sessions": "Box-Beat, Team-HIIT, Team-Body-Pump & Team-running",
-            "years_of_experience": "8",
-            "words_from_the_instructor": "We have everything for you and your team, let us get those spirits up, let us pump up that beat and have some good old fashioned fun in the ring together. Here at Work Workouts we're all about getting you guys what you want and what you need!",
-            "image_url": "https://unsplash.com/photos/ThqaTYD_l0o",
-            "image": "adam-strong.jpg"
-        }
-    },
-    {
-        "pk": 5,
-        "model": "instructors.instructor",
-        "fields": {
-            "name": "Alex Guray",
-            "sessions": "Yoga, Core Stability & Team-HIIT",
-            "years_of_experience": "3",
-            "words_from_the_instructor": "There is nothing we cannot do together, nothing is impossible as long as we band togethere and become our best selves. Come join us and find your best self too!",
-            "image_url": "https://unsplash.com/photos/Q-uj9m22uug",
-            "image": "alex-guray.jpg"
-        }
-    },
-    {
-        "pk": 6,
-        "model": "instructors.instructor",
-        "fields": {
-            "name": "Cali Knight",
-            "sessions": "Dance-Step & Team-Running",
-            "years_of_experience": "4",
-            "words_from_the_instructor": "Movement is a strong way to express yourself, and here we like to express ourselves. Come join us and we can show the world the meaning of strong movements!",
-            "image_url": "https://unsplash.com/photos/0XWHaJ73wts",
-            "image": "cali-knight.jpg"
-        }
+  {
+    "pk": 1,
+    "model": "instructors.instructor",
+    "fields": {
+      "name": "Valerie Johnson",
+      "sessions": "Yoga, Core Stability & Dance-Step",
+      "years_of_experience": "4",
+      "words_from_the_instructor": "I've been in the wellness business for a couple of years now and I love to the feeling you get of seeing happy faces at the end of a good workout sessions! You're going to enjoy every minute of it.",
+      "image_url": "https://unsplash.com/photos/ZvuK8YAJK0Y",
+      "image": "valerie-johnson.jpg"
     }
+  },
+  {
+    "pk": 2,
+    "model": "instructors.instructor",
+    "fields": {
+      "name": "Kate Winfrey",
+      "sessions": "Core Stability, Team-Body-Pump & Team-HIIT",
+      "years_of_experience": "3",
+      "words_from_the_instructor": "Here at Work Workouts we're all about the team coming together, and I thrive on that. With us you guys are gonna get your heartbeats pumping and you muscles burning, and we'll do everything as a team. Strong together!",
+      "image_url": "https://unsplash.com/photos/ACbu5AY5Tvk",
+      "image": "kate-winfrey.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "instructors.instructor",
+    "fields": {
+      "name": "Stephan Silva",
+      "sessions": "W-Spin & Team-Running",
+      "years_of_experience": "5",
+      "words_from_the_instructor": "Come join me in our state of the art spinning classes, we've got everything from elite to beginners. Whatever your level is, I promise you, we're going to have a lot of fun together!",
+      "image_url": "https://unsplash.com/photos/xdqBO0f2FoM",
+      "image": "stephan-silva.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "instructors.instructor",
+    "fields": {
+      "name": "Adam Strong",
+      "sessions": "Box-Beat, Team-HIIT, Team-Body-Pump & Team-running",
+      "years_of_experience": "8",
+      "words_from_the_instructor": "We have everything for you and your team, let us get those spirits up, let us pump up that beat and have some good old fashioned fun in the ring together. Here at Work Workouts we're all about getting you guys what you want and what you need!",
+      "image_url": "https://unsplash.com/photos/ThqaTYD_l0o",
+      "image": "adam-strong.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "instructors.instructor",
+    "fields": {
+      "name": "Alex Guray",
+      "sessions": "Yoga, Core Stability & Team-HIIT",
+      "years_of_experience": "3",
+      "words_from_the_instructor": "There is nothing we cannot do together, nothing is impossible as long as we band togethere and become our best selves. Come join us and find your best self too!",
+      "image_url": "https://unsplash.com/photos/Q-uj9m22uug",
+      "image": "alex-guray.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "instructors.instructor",
+    "fields": {
+      "name": "Cali Knight",
+      "sessions": "Dance-Step & Team-Running",
+      "years_of_experience": "4",
+      "words_from_the_instructor": "Movement is a strong way to express yourself, and here we like to express ourselves. Come join us and we can show the world the meaning of strong movements!",
+      "image_url": "https://unsplash.com/photos/SzI4No8rQ14",
+      "image": ""
+    }
+  }
 ]

@@ -1,50 +1,50 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block page_header %}
+{% extends "base.html" %} {% load static %} {% block page_header %}
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
     </div>
 </div>
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Our Instructors</h2>
-            <hr class="w-50 mb-1">
+            <hr class="w-50 mb-1" />
         </div>
     </div>
 
     <!-- Part to iterate through each instructor -->
-    
+
     <div class="row">
         <div class="col-10 instructor-container offset-1">
             <div class="row mt-1 mb-2"></div>
             <div class="row">
                 {% for instructor in instructors %}
-                    <div class="col-6 col-m-12 col-sm-12">
+                    <div class="col-12 col-md-6 col-sm-12">
                         <div class="card h-150 border-0 image-container">
                             {% if instructor.image %}
                             <img class="card-img-top img-fluid h-150" src=" ../../../media/{{ instructor.image  }}"
-                                alt="{{ instructor.name }}" style="max-height: fit-content;">
+                                alt="{{ instructor.name }}" style="max-height: fit-content" />
                             {% else %}
-                            <img class="card-img-top img-fluid h-150" src="/media/noimage.png" alt="{{ instructor.name }}">
+                            <img class="card-img-top img-fluid h-150" src="/media/noimage.png"
+                                alt="{{ instructor.name }}" />
                             {% endif %}
                         </div>
                     </div>
 
-                    <div class="col-6 col-m-12 col-sm-12">
+                    <div class="col-12 col-md-6 col-sm-12 text-center mt-lg-5">
                         <div class="card h-150 border-0">
-                            <hr class="w-50 mb-0">
+                            <hr class="w-50 mb-0" />
                             <span class="bg-white pt-0 border-0">
                                 <p><strong>Name: </strong>{{ instructor.name }}</p>
                                 <p><strong>Main Sessions: </strong>{{ instructor.sessions }}</p>
-                                <p><strong>Years Of Experience: </strong>{{ instructor.years_of_experience }}</p>
-                                <p><strong>Encouraging words: </strong>{{ instructor.words_from_the_instructor }}</p>
+                                <p>
+                                    <strong>Years Of Experience: </strong>{{ instructor.years_of_experience }}
+                                </p>
+                                <p>
+                                    <strong>Encouraging words: </strong>{{ instructor.words_from_the_instructor }}
+                                </p>
                             </span>
                         </div>
                     </div>
