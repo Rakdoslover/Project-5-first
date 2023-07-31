@@ -757,9 +757,9 @@ On the deployed stie it only show the bare minimals right now, I'm working with 
 
 <a name="credits"></a>
 
-##### Code institue Django3blog
+##### Code institue Boutique Ado
 
-- I started the project using the blog template from https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/c82c677a83756a84c24181ed124e50ad38de67cf
+- I started the project using the boutique template from https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/c82c677a83756a84c24181ed124e50ad38de67cf
 - This gave me a guide how to develop the project, install all parts and deploy to Heroku.
 - It also gave me the starting baseline for my inital CSS/settings/url/models/Base and Index template/admin and start view functions.
 - I copied and used the Allauth templates for sign-up/-in/-out, these were not the main focus of my site this time around.
