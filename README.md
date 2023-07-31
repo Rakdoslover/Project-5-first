@@ -8,7 +8,7 @@ our world class workout session.
 There is never a dull moment here at the state of the art gym with everything from
 spinning, boxing, weight lifting gym and yoga session.
 
-## Purpose of the Project
+## Purpose of the Project / Business Model
 
 The purpose of the this site is to make it easy for company owners/HR/health-organizers
 working for companies or organisation to book group sessions for their employees.
@@ -16,6 +16,13 @@ It's a simple payment system ported from the stripe module, where we utilize the
 once payment for X different workout sessions.
 As a site/business owner we can easily access the backend to se orders and contact
 constumers to book time and place.
+
+Our business is a B2B based site where the main goal is to sell group sessions
+to larger parties or businesses. Our main goal is to create lasting business relations
+as this is the case our focus will be on relational selling points like togetherness,
+group activities, team-building and long lasting health.
+We're going to rely on the good word spreading from our first clients, and the importance
+of open-for-everyone events outside of the business locals.
 
 ### **[Live Site](https://project-5-first-a9f5854c68ec.herokuapp.com/)**
 
