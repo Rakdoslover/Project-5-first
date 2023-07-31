@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Instructor(models.Model):
+    """ main instructors model """
     name = models.CharField(max_length=254)
     sessions = models.TextField()
     years_of_experience = models.IntegerField(default=0)

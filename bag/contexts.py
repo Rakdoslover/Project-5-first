@@ -5,7 +5,7 @@ from workouts.models import Workout_Session
 
 
 def bag_contents(request):
-
+    # The bag contents
     bag_items = []
     total = 0
     session_count = 0

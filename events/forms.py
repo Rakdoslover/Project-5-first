@@ -4,7 +4,7 @@ from .models import Event
 
 
 class EventForm(forms.ModelForm):
-
+    """ the event form """
     class Meta:
         model = Event
         fields = '__all__'
