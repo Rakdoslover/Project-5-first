@@ -158,7 +158,7 @@ The main goal for this project is to create a user friendly site with simple nav
 and a place for businesses to purchase workout sessions.
 The users/customers are browsing the different types of sessions, our instructors
 and upcoming events hosted by Work Workouts.
-Users can choose a product7session, take it through to the bag and from there to
+Users can choose a product/session, take it through to the bag and from there to
 the checkout. If the user has a registered account they can then see their order
 on their profile site.
 
@@ -209,33 +209,49 @@ Down below you can find both the fulfilled stories but also those not completed.
 - **Users can** create an account (**Create**)
 - **Users can** log into their account
 - **Users can** log out of their account
-- **Users can** create comment on chapter **(Create)**
-- **Users can** read comments from other members \*(**Read**)
-- **Users can** view chapters from home page (**Read**)
-- **Users can** edit their own comments (**Update**)
-- **Users can** delete their own comments (**Delete**)
-- **Users can** edit and delete others comments/chapters if they have superuser status through the adminpanel (**Update/Delete**)
+- **Users can** browse our sessions, instructors and events **(Read)**
+- **Users can** view specific sessions and events **(Read)**
+- **Users can** pick sessions and put in their bag 
+- **Users can** edit their bag contents (**Update**)
+- **Users can** delete their own bag contents (**Delete**)
+- **Users can** take the bag contents through to the checkout app
+- **Users can** fill out a contactform and preview the sub/grand total of the items
+- **Users can** go back and not finish the purchase
+- **Users can** take the purchase through and get a confirmation email/order update on their profile page
+- **Users can** view and update their profile page (**Read and Update**)
 
 #### User cannot:
 
-- **Users cannot** post comments without an account or being logged in.
-- **Users cannot** edit comments they've made previously without being logged in.
+- **Users cannot** create, update and delete sessions/instructors/events they didn't create.
 - **Users cannot** access the admin panel of the website unless they have admin status.
-- **Users cannot**
 
 #### Website Features
 
-##### Chapters on Home page
+##### Our Sessions page
 
-- Chapters are published in order of newest to oldest so that it's easy for members to find the newest chapter in the story.
-- Chapters are paginated to a maximum of 6 per side to not fill up the whole screen with chapters.
-- User are able to get a small excerpt of what the theme of the chapter is.
+- Sessions are published on the page and can be accessed both from the home page and from the navbar.
+- Sessions are detailed on both the outer layer and the inner layer.
+- User are able to click the session in question to get a detailed page.
 
-##### Chapter Detail page
+##### Session Detail page
 
-- Users are able to read the published chapter on a separate page than the home screen.
-- Users are able to comment, if authorized, and participate in the stories community.
-- users can use CRUD to change what they already commented or delete it completely.
+- Users are able to read the information published for the session.
+- Users are able to choose an amount of sessions they would like and put them in their bag.
+
+##### Instructors page
+
+- Users are able to read information about our instructors.
+
+##### Events page
+
+- Events are ordered in the newest to oldest.
+- Users can see basic information about each event up front.
+- Users can click the event they're interested in and get to the detailed page.
+
+##### Event Detail page
+
+- Users can read the full information about the event.
+- There is no signup/book section as of yet.
 
 [Back to Top of page](#tcontents)
 
@@ -293,7 +309,11 @@ Down below you can find both the fulfilled stories but also those not completed.
 
 ### Lucidcharts
 
-- Used for to visulize the database structure
+- Used for to visulize the database structure.
+
+### AWS
+
+- Used to store the staicfiles and media.
 
 [Back to Top of page](#tcontents)
 
@@ -319,8 +339,22 @@ with the tests provided below.
 | Nav bar - register page | Click register button                             | Register button takes me to the signup page | Works as expected |
 | Nav bar - login page    | Click login button                                | Login button takes me to the signin page    | Works as expected |
 | Nav bar - logout page   | Click logout button                               | Logout button takes me to the signout page  | Works as expected |
-| Chapter Page            | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
-| Chapter Page            | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Our Sessions Page       | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Our Sessions Page       | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Session Detail Page     | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Session Detail Page     | Size to 1920px using Chrome Dev Tools             | Elements look good @ 320px                  | Works as expected |
+| Instructors Page        | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Instructors Page        | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Events Page             | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Events Page             | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Event Detail Page       | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Event Detail Page       | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Bag Page                | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Bag Page                | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Checkout Page           | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Checkout Page           | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Profile Page            | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Profile Page            | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
 | Login Page              | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
 | Login Page              | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
 | Signup Page             | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
@@ -338,13 +372,13 @@ with the tests provided below.
 
 ---
 
-### Chapter and Pagination
+### Sessions
 
 | Test                                                           | Result |
 | -------------------------------------------------------------- | ------ |
-| User can open each chapter paginated on the site               | Pass   |
-| User can go back and forth between sites with Next/Prev-button | Pass   |
-| User can see chapters without being logged in                  | Pass   |
+| User can read all session available on the site                | Pass   |
+| User can click the session to get into the session details     | Pass   |
+| User can choose an amount and put in their bag                 | Pass   |
 
 ---
 
@@ -354,39 +388,52 @@ with the tests provided below.
 | -------------------------------------------------------------------------- | ------ |
 | Users can engage with the nav bar on the home page                         | Pass   |
 | Users can engage with the nav bar on each of the login/logout/signup pages | Pass   |
-| Users can engage with the nav bar on the chapter detail page               | Pass   |
+| Users can engage with the nav bar on the Our Sessions pages                | Pass   |
+| Users can engage with the nav bar on the Instructors page                  | Pass   |
+| Users can engage with the nav bar on the Events pages                      | Pass   |
+| Users can engage with the nav bar on the Bag page                          | Pass   |
+| Users can engage with the nav bar on the Checkout page                     | Pass   |
 
 ---
 
-### Create Comment and Read Comments
+### View/Update Bag Contents
 
 | Test                                                   | Result |
 | ------------------------------------------------------ | ------ |
-| Authorized users can comment on a specific chapter     | Pass   |
-| All users can read comments posted by authorized users | Pass   |
+| Users can click on the bag icon to see their bag       | Pass   |
+| Users can see each item row by row                     | Pass   |
+| Users can update and remove items from the bag         | Pass   |
 
 ---
 
-### Update Comment and Delete Comment
+### Checkout
 
-| Test                                                                | Result |
-| ------------------------------------------------------------------- | ------ |
-| Authorized users can update a previously published comment they own | Pass   |
-| Authorized users can delete a previously published comment they own | Pass   |
+| Test                                                                  | Result |
+| --------------------------------------------------------------------- | ------ |
+| Users can take their bag through to the checkout app                  | Pass   |
+| Users can fill out a contact form and see their sub/grand total       | Pass   |
+| Users can fulfill the payment and get a confirmation email/order      | Pass   |
+| If logged in, the user gets the order info assigned to their profile  | Pass   |
 
 ---
 
 #### Admin Tests
 
 | Test                                                         | Result |
-| ------------------------------------------------------------ | ------ |
-| Admin can add chapters from adminpanel                       | Pass   |
-| Admin can add comments from adminpanel                       | Pass   |
-| Admin can update chapters from adminpanel                    | Pass   |
-| Admin can update comments from adminpanel                    | Pass   |
-| Admin can delete chapters from adminpanel                    | Pass   |
-| Admin can delete comments from adminpanel                    | Pass   |
-| Admin can create/update/delete user profiles from adminpanel | Pass   |
+| --------------------------------------------------------------- | ------ |
+| Admin can add sessions from adminpanel                          | Pass   |
+| Admin can add instructors from adminpanel                       | Pass   |
+| Admin can add events from adminpanel                            | Pass   |
+| Admin can update sessions from adminpanel                       | Pass   |
+| Admin can update instructors from adminpanel                    | Pass   |
+| Admin can update events from adminpanel                         | Pass   |
+| Admin can delete sessions from adminpanel                       | Pass   |
+| Admin can delete instructors from adminpanel                    | Pass   |
+| Admin can delete events from adminpanel                         | Pass   |
+| Admin can create/update/delete user profiles from adminpanel    | Pass   |
+| Admin can create/update/delete user purchases from adminpanel   | Pass   |
+| Admin can create/update/delete sessions from Frontend           | Pass   |
+| Admin can create/update/delete events from Frontend             | Pass   |
 
 ---
 

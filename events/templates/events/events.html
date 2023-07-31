@@ -31,33 +31,33 @@
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for event in events %}
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
-                                {% if "placeholder" in chapter.featured_image.url %}
-                                <img class="card-img-top" src="/media/placeholder.jpg" style="max-height: 375px"
-                                    alt="event image">
-                                {% else %}
-                                <img class="card-img-top" src="{{ event.featured_image.url }}" style="max-height: 375px"
-                                    alt="event image">
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="image-container">
+                                    {% if "placeholder" in chapter.featured_image.url %}
+                                    <img class="card-img-top" src="/media/placeholder.jpg" style="max-height: 375px"
+                                        alt="event image">
+                                    {% else %}
+                                    <img class="card-img-top" src="{{ event.featured_image.url }}" style="max-height: 375px"
+                                        alt="event image">
+                                    {% endif %}
+                                </div>
+                                <a href="{% url 'event_detail' event.id %}" class="post-link">
+                                    <h2 class="card-title">{{ event.title }}</h2>
+                                    <p class="card-text">{{ event.excerpt }}</p>
+                                    <p class="card-text">{{ event.date }}</p>
+                                </a>
+                                <hr />
+                                {% if request.user.is_superuser %}
+                                <small class="ml-3">
+                                    <a href="{% url 'edit_event' event.id %}">Edit</a> |
+                                    <a class="text-danger" href="{% url 'delete_event' event.id %}">Delete</a>
+                                </small>
                                 {% endif %}
                             </div>
-                            <a href="{% url 'event_detail' event.id %}" class="post-link">
-                                <h2 class="card-title">{{ event.title }}</h2>
-                                <p class="card-text">{{ event.excerpt }}</p>
-                                <p class="card-text">{{ event.date }}</p>
-                            </a>
-                            <hr />
-                            {% if request.user.is_superuser %}
-                            <small class="ml-3">
-                                <a href="{% url 'edit_event' event.id %}">Edit</a> |
-                                <a class="text-danger" href="{% url 'delete_event' event.id %}">Delete</a>
-                            </small>
-                            {% endif %}
                         </div>
                     </div>
-                </div>
                 {% endfor %}
             </div>
         </div>
