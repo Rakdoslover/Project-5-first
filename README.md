@@ -712,10 +712,10 @@ There are 4 errors indicating lines that're too long in my settings.py file,
 I've intentionally left them in because they were created when django was
 installed on the system. I've tried moving them but only gotten more errors.
 
-<strong>Problem 1: Remains</strong>
+<strong>Problem 1: Static Files on deployed site Remains</strong>
 
-
-<strong>Problem 2: Resolved</strong>
+In the eleventh hour something happened to the files on the site and I lost all contact with them.
+On the deployed stie it only show the bare minimals right now, I'm working with this one up until the submission moment.
 
 
 [Back to Top of page](#tcontents)
