@@ -1,4 +1,4 @@
-# The Work Workouts project
+# The Work Workouts Business Project
 
 ## Basic Site Description
 
