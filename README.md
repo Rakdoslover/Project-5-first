@@ -194,7 +194,7 @@ Down below you can find both the fulfilled stories but also those not completed.
 
 ##### Uncompleted
 
-1. [USER STORY: Rate Comments]()
+1. [USER STORY: Booking system for events]()
 
 [Back to Top of page](#tcontents)
 
@@ -444,7 +444,6 @@ with the tests provided below.
 - [W3C HTML Validator](https://validator.w3.org/)
   - Checked all HTML-fiels checked.
   - Had minor errors mostly called by the django templating inside the HTML.
-    - Errors corrected by [commit: b15573e](https://github.com/Rakdoslover/project-4-story/commit/b15573e31dafd501b9720b6330692526b2dfd3d4)
     - The remaining validation issues are all attributed to Django Templating not being recognized by W3C:
       - **Warning**: Consider adding a `lang` attribute to the `html` start tag to declare the language of this document
       - **Error**: Non-space characters found without seeing a doctype first. Expected `<!DOCTYPE html>`
