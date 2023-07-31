@@ -14,6 +14,14 @@
             <hr class="w-50 mb-1" />
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h3 class="logo-font">Together for a healthier everyday life</h3>
+                <hr class="w-50 mb-1" />
+            </div>
+        </div>
+    </div>
     {% if request.user.is_superuser %}
     <div class="container-fluid">
         <div class="row">
@@ -31,33 +39,33 @@
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for event in events %}
-                    <div class="col-md-6">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <div class="image-container">
-                                    {% if "placeholder" in chapter.featured_image.url %}
-                                    <img class="card-img-top" src="/media/placeholder.jpg" style="max-height: 375px"
-                                        alt="event image">
-                                    {% else %}
-                                    <img class="card-img-top" src="{{ event.featured_image.url }}" style="max-height: 375px"
-                                        alt="event image">
-                                    {% endif %}
-                                </div>
-                                <a href="{% url 'event_detail' event.id %}" class="post-link">
-                                    <h2 class="card-title">{{ event.title }}</h2>
-                                    <p class="card-text">{{ event.excerpt }}</p>
-                                    <p class="card-text">{{ event.date }}</p>
-                                </a>
-                                <hr />
-                                {% if request.user.is_superuser %}
-                                <small class="ml-3">
-                                    <a href="{% url 'edit_event' event.id %}">Edit</a> |
-                                    <a class="text-danger" href="{% url 'delete_event' event.id %}">Delete</a>
-                                </small>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="image-container">
+                                {% if "placeholder" in chapter.featured_image.url %}
+                                <img class="card-img-top" src="/media/placeholder.jpg" style="max-height: 375px"
+                                    alt="event image">
+                                {% else %}
+                                <img class="card-img-top" src="{{ event.featured_image.url }}" style="max-height: 375px"
+                                    alt="event image">
                                 {% endif %}
                             </div>
+                            <a href="{% url 'event_detail' event.id %}" class="post-link">
+                                <h2 class="card-title">{{ event.title }}</h2>
+                                <p class="card-text">{{ event.excerpt }}</p>
+                                <p class="card-text">{{ event.date }}</p>
+                            </a>
+                            <hr />
+                            {% if request.user.is_superuser %}
+                            <small class="ml-3">
+                                <a href="{% url 'edit_event' event.id %}">Edit</a> |
+                                <a class="text-danger" href="{% url 'delete_event' event.id %}">Delete</a>
+                            </small>
+                            {% endif %}
                         </div>
                     </div>
+                </div>
                 {% endfor %}
             </div>
         </div>
@@ -80,5 +88,79 @@
         </ul>
     </nav>
     {% endif %}
+    <footer class="container-wrapper">
+        <div class="container quotes-container content-container">
+            <section class="footer">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div id="mc_embed_shell">
+                            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet"
+                                type="text/css">
+                            <style type="text/css">
+                                #mc_embed_signup {
+                                    background: #fff;
+                                    false;
+                                    clear: left;
+                                    font: 14px Helvetica, Arial, sans-serif;
+                                    width: 600px;
+                                }
+
+                                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                            </style>
+                            <div id="mc_embed_signup">
+                                <form
+                                    action="https://herokuapp.us21.list-manage.com/subscribe/post?u=f4c1dd62b19505a86de42c64c&amp;id=a6a5d67d8c&amp;f_id=00145fe1f0"
+                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                    class="validate" target="_blank">
+                                    <div id="mc_embed_signup_scroll">
+                                        <h3>Subscribe to the newsletter!</h3>
+                                        <p>Get some inside info and news about upcoming events</p>
+                                        <div class="indicates-required"><span class="asterisk">*</span> indicates
+                                            required</div>
+                                        <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
+                                                    class="asterisk">*</span></label><input type="email" name="EMAIL"
+                                                class="required email" id="mce-EMAIL" required="" value=""><span
+                                                id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                                        </div>
+                                        <div id="mce-responses" class="clear foot">
+                                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                                            <div class="response" id="mce-success-response" style="display: none;">
+                                            </div>
+                                        </div>
+                                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                            /* real people should not fill this in and expect good things - do not
+                                            remove this or risk form bot
+                                            signups */
+                                            <input type="text" name="b_f4c1dd62b19505a86de42c64c_a6a5d67d8c"
+                                                tabindex="-1" value="">
+                                        </div>
+                                        <div class="optionalParent">
+                                            <div class="clear foot">
+                                                <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                                    class="button" value="Subscribe">
+                                                <p class="brandingLogo" style="margin: 0px auto;">
+                                                    <a href="http://eepurl.com/iwLKpA"
+                                                        title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
+                                                        alt="referral badge">
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
 </div>
+<!-- Mail chimp script -->
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script
+    type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 {% endblock %}
