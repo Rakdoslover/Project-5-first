@@ -1,10 +1,13 @@
-{% extends "base.html" %} {% load static %} {% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
+{% extends "base.html" %} 
+{% load static %} 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
     </div>
-</div>
-{% endblock %} {% block content %}
+{% endblock %} 
+{% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
@@ -33,11 +36,11 @@
                     <div class="col-12 col-md-6 col-sm-12">
                         <div class="card h-150 border-0 image-container">
                             {% if instructor.image %}
-                            <img class="card-img-top img-fluid h-150" src="../../../media/{{ instructor.image }}"
-                                alt="{{ instructor.name }}" style="max-height: fit-content" />
+                                <img class="card-img-top img-fluid h-150" src="../../../media/{{ instructor.image }}"
+                                    alt="{{ instructor.name }}" style="max-height: fit-content" />
                             {% else %}
-                            <img class="card-img-top img-fluid h-150" src="/media/noimage.png"
-                                alt="{{ instructor.name }}" />
+                                <img class="card-img-top img-fluid h-150" src="/media/noimage.png"
+                                    alt="{{ instructor.name }}" />
                             {% endif %}
                         </div>
                     </div>
