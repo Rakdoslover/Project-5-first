@@ -57,9 +57,9 @@ INSTALLED_APPS = [
     'profiles',
 
     # Other
-    'cloudinary_storage',
     'storages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'cloudinary',
     'django_summernote',
     'crispy_forms',
