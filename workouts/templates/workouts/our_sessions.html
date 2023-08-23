@@ -45,11 +45,11 @@
                                 </h3>
                                 {% if session.image %}
                                     <a href="{% url 'session_detail' session.id %}" class="nav-link" target="_blank">
-                                        <img class="card-img-top img-fluid h-150" src="../../../media/{{ session.image }}"
+                                        <img class="card-img-top img-fluid h-150" src="{{MEDIA_URL}}{{ session.image }}"
                                             alt="{{ session.name }}" />
                                     </a>
                                 {% else %}
-                                    <img class="card-img-top img-fluid h-150" src="/media/noimage.png" alt="{{ session.name }}" />
+                                    <img class="card-img-top img-fluid h-150" src="{{MEDIA_URL}}/noimage.png" alt="{{ session.name }}" />
                                 {% endif %}
                             </div>
                         </div>

@@ -15,10 +15,10 @@
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     {% if event.featured_image %}
-                        <img class="card-img-top img-fluid" src="{{ event.featured_image.url }}"
+                        <img class="card-img-top img-fluid" src="{{MEDIA_URL}}{{ event.featured_image.url }}"
                         alt="{{ event.title }}">
                     {% else %}
-                        <img class="card-img-top img-fluid" src="/media/noimage.png" alt="{{ event.name }}">
+                        <img class="card-img-top img-fluid" src="{{MEDIA_URL}}/noimage.png" alt="{{ event.name }}">
                     {% endif %}
                     <p class="mt-2"><strong>When: </strong>{{ event.date }}</p>
                     <p class="mt-2"><strong>Location: </strong>{{ event.location }}</p>
