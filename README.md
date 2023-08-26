@@ -183,8 +183,24 @@ to be able to do.
 
 ---
 
-To see Kanban please click [here]()
+To see Kanban please click [here](https://github.com/users/Rakdoslover/projects/6)
 
+### Deployment to Heroku
+---
+After the repository, Kanban board and workspace was up and running I started to connect it to Heroku.
+Steps to deploy:
+- Created a new app with the name of project-5-first.
+- Connected my postgres database, Cloudinary, AWS keys, Stripe keys and secret key to the config vars.
+- Added the Email host as a var for confirmation purposes.
+- Put the DISABLE_COLLECTSTATIC to 1 until final depolyment.
+- Assigned the port = 8000.
+- Connected the repo to automatically deploy when commited to main branch.
+- Set the debug to "DEBUG = 'DEVELOPMENT' in os.environ" and added correct code to my env.py to make sure the code when to debug and not.
+- Updated the allowed hosts in settings to show both sites (live and in workspace).
+- Started commiting to the repo and checking the live site with after each major update.
+- At the end when i was happy with the finished product, I made sure to remove DISABLE_COLLECTSTATIC and published the site.
+
+At some points I had to take a step back to redo certain bits and pieces, but I followed these steps to get the final version.
 
 #### User stories
 
