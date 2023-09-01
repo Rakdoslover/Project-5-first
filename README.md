@@ -825,4 +825,12 @@ Used to following sites to get some stock images for my pages:
 
 [Back to Top of page](#tcontents)
 
+#### Test profiles
+
+Created the following profiles to test the features, they are open to anyone who wants to try the site.
+<strong>Username:</strong>
+TestProf
+
+<strong>Password:</strong>
+testtest
 ---
