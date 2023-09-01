@@ -832,5 +832,5 @@ Created the following profiles to test the features, they are open to anyone who
 TestProf
 
 <strong>Password:</strong>
-testtest
+Thisisatest1!
 ---
