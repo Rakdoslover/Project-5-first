@@ -183,6 +183,32 @@ a:visited {
   max-height: auto;
 }
 
+/* -------------------------------- */
+
+/* -------------------------------- Contact */
+
+#fb-link {
+  text-decoration: none;
+}
+
+.email-hover:hover {
+  color: #28a745;
+}
+/* -------------------------------- */
+
+/* -------------------------------- Footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+}
+
+/* -------------------------------- */
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

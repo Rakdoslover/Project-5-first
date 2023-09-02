@@ -1,9 +1,22 @@
 {% extends "base.html" %}
 {% load static %}
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
 
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Reach out to us!</h2>
+            <hr class="w-50 mb-1" />
+        </div>
+    </div>
     <div class="row">
         <div class="col-6">
 
@@ -31,7 +44,7 @@
                             }
 
                             /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
                         </style>
                         <div id="mc_embed_signup">
                             <form
@@ -79,10 +92,22 @@
                     </div>
 
                 </div>
+                <div class="col-12 col-md-6 text-center mt-3">
+                    <a href="https://www.facebook.com/profile.php?id=100095114092579" id="fb-link" target="_blank">
+                        <h3>Visit our Facebook page!</h3>
+                    </a>
+                    <a href="">
+                        <p class="text-center mt-3 email-hover">
+                            <h3>Send us an email!</h3>
+                            <h3>workworkoutsbusiness@gmail.com</h3>
+                        </p>
+                    </a>
+                </div>
             </div>
         </section>
     </div>
 </footer>
+
 <!-- Mail chimp script -->
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 <script
