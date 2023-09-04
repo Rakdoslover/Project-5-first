@@ -188,7 +188,7 @@ a:visited {
 /* -------------------------------- Contact */
 
 #fb-link {
-  text-decoration: none;
+  text-decoration: dotted;
 }
 
 .email-hover:hover {
