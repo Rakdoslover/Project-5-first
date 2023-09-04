@@ -20,7 +20,7 @@
             {% for item in bag_items %}
             <div class="row">
                 <div class="col-3 my-1">
-                    <img class="w-100" src="../../../media/{{ item.session.image }}">
+                    <img class="w-100" src="{{MEDIA_URL}}{{ item.session.image }}">
                 </div>
                 <div class="col-9">
                     <p class="my-0"><strong>{{ item.session.name }}</strong></p>
