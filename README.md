@@ -55,9 +55,17 @@ of open-for-everyone events outside of the business locals.
 
 <a name="ux"></a>
 
-![Lucid Chart](/media/database-structure.jpg)
+### Wireframe of the site
+
+I created this wireframe as a small note on how I wanted the primary page would look like.
+It depicts the page where the customer/user does most of the integration.
+This would later be the "Our Sessions" page where the customer can buy any specified amount of workout sessions.
+
+![Wireframe](/media/wire-frame.jpg)
 
 ### Database Structure
+
+![Lucid Chart](/media/database-structure.jpg)
 
 #### UserProfile
 
