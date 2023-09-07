@@ -268,6 +268,7 @@ Down below you can find both the fulfilled stories but also those not completed.
 - **Users can** go back and not finish the purchase
 - **Users can** take the purchase through and get a confirmation email/order update on their profile page
 - **Users can** view and update their profile page (**Read and Update**)
+- **Users can** view previous orders through their profile page (**Read**)
 
 #### User cannot:
 
@@ -396,6 +397,8 @@ with the tests provided below.
 | Instructors Page        | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
 | Events Page             | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
 | Events Page             | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
+| Contact Page            | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
+| Contact Page            | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
 | Event Detail Page       | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
 | Event Detail Page       | Size to 1920px using Chrome Dev Tools             | Elements look good @ 1920px                 | Works as expected |
 | Bag Page                | Size to 320px using Chrome Dev Tools              | Elements look good @ 320px                  | Works as expected |
@@ -418,6 +421,7 @@ with the tests provided below.
 | User can create account     | Pass   |
 | User can log into account   | Pass   |
 | User can log out of account | Pass   |
+| User can reset password     | Pass   |
 
 ---
 
@@ -468,7 +472,7 @@ with the tests provided below.
 
 #### Admin Tests
 
-| Test                                                         | Result |
+| Test                                                            | Result |
 | --------------------------------------------------------------- | ------ |
 | Admin can add sessions from adminpanel                          | Pass   |
 | Admin can add instructors from adminpanel                       | Pass   |
@@ -483,6 +487,16 @@ with the tests provided below.
 | Admin can create/update/delete user purchases from adminpanel   | Pass   |
 | Admin can create/update/delete sessions from Frontend           | Pass   |
 | Admin can create/update/delete events from Frontend             | Pass   |
+
+---
+
+#### Webhook/Stripe
+
+| Test                                                            | Result |
+| --------------------------------------------------------------- | ------ |
+| Webhook confirmation emails goes through after bought product   | Pass   |
+| Admin can through Stripe see confirmed and fulfilled purchases  | Pass   |
+| Failed purchases shows up on Stripe with appropriate message    | Pass   |
 
 ---
 
