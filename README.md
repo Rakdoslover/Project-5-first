@@ -63,6 +63,16 @@ This would later be the "Our Sessions" page where the customer can buy any speci
 
 ![Wireframe](/media/wire-frame.jpg)
 
+### Work Workouts Diagram
+
+This is the intended flow for users visiting our page.
+I added the "Get in Contact" page at a latter stage realizing it would be a good idea for it
+to have it's own page.
+When the customer has passed through the mainline flow (Our sessions-workouts to buy-checkout), they can save the information
+on their profile page if they've went through the signup/login.
+
+![Diagram](/media/work-flow.jpg)
+
 ### Database Structure
 
 ![Lucid Chart](/media/database-structure.jpg)
