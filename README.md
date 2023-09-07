@@ -75,6 +75,11 @@ on their profile page if they've went through the signup/login.
 
 ### Database Structure
 
+And here we have a flowchart of the database structure and how it connects.
+The main part here being the double connection from Workout_Session to UserProfile and OrderLineItem.
+Outside of the main customer path we have the Event model, at this moment it is not connected to the main part, in the
+future it might be an event based product for customers to buy.
+
 ![Lucid Chart](/media/database-structure.jpg)
 
 #### UserProfile
