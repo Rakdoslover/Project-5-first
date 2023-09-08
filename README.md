@@ -195,6 +195,18 @@ Users can choose a product/session, take it through to the bag and from there to
 the checkout. If the user has a registered account they can then see their order
 on their profile site.
 
+
+### Marketing and Target Audience
+
+---
+
+In the beginning we are going to lean heavily into networking and reaching out to businesses on
+Instagram, LinkedIn and Facebook. We're searching for businessess with a working force of mainly
+office workers. Our target audience would be workers with mostly sitting jobs where we can provide
+an outlet for them to move during working time. We can take our sessions to you which makes it easier
+for the customer becasue they don't need to leave the workplace. Our mission here is for the business
+to realize that even a small amount of physical activity would increase their employees wellbeing.
+
 ### Agile Project
 
 ---
@@ -239,7 +251,7 @@ Down below you can find both the fulfilled stories but also those not completed.
 6. [USER STORY: Admin Login Frontend (Must-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34568010)
 7. [USER STORY: Create Account (Should-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34568128)
 8. [USER STORY: Purchase Session (Must-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=34568300)
-9. [USER STORY: View Comments]()
+9. [USER STORY: Contact Page (Should-Have)](https://github.com/users/Rakdoslover/projects/6/views/1?pane=issue&itemId=38037275)
 
 ##### Uncompleted
 
@@ -269,6 +281,7 @@ Down below you can find both the fulfilled stories but also those not completed.
 - **Users can** take the purchase through and get a confirmation email/order update on their profile page
 - **Users can** view and update their profile page (**Read and Update**)
 - **Users can** view previous orders through their profile page (**Read**)
+- **Users can** contact the business through the contact page
 
 #### User cannot:
 
