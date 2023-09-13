@@ -199,10 +199,15 @@ a:visited {
   color: #28a745;
 }
 
-#text-contact {
-  display: flexbox;
+.text-contact {
+  text-align: center;
+}
+
+.text-contact p {
+  display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  height: 200px;
 }
 
 /* -------------------------------- */
