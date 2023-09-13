@@ -12,6 +12,10 @@ body {
   z-index: 99999;
 }
 
+span {
+  text-align: center;
+}
+
 a {
   color: #555;
   text-decoration: none;
@@ -193,6 +197,12 @@ a:visited {
 
 .email-hover:hover {
   color: #28a745;
+}
+
+#text-contact {
+  display: flexbox;
+  justify-content: center;
+  align-content: center;
 }
 
 /* -------------------------------- */
