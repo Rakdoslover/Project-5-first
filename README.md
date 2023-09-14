@@ -918,9 +918,9 @@ Used to following sites to get some stock images for my pages:
 #### Test profiles
 
 Created the following profiles to test the features, they are open to anyone who wants to try the site.
-<strong>Username:</strong>
+Username:
 TestProf
-
-<strong>Password:</strong>
+Password:
 Thisisatest1!
+
 ---
