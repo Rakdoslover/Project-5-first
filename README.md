@@ -486,6 +486,24 @@ with the tests provided below.
 
 ---
 
+### Events
+
+| Test                                                                        | Result |
+| --------------------------------------------------------------------------- | ------ |
+| Users cannot access the edit/delete page for the events page                | Pass   |
+| User can access and read the general and more specific info for each event  | Pass   |
+
+---
+
+### Instructors
+
+| Test                                                                        | Result |
+| --------------------------------------------------------------------------- | ------ |
+| Users cannot access the edit/delete page for the instructors page           | Pass   |
+| User can access and read information regarding our instructors              | Pass   |
+
+---
+
 #### Admin Tests
 
 | Test                                                            | Result |
@@ -682,6 +700,21 @@ By pressing the event the can get to a more detailed page.
 
 And here we have it opened and scaled down to 320px width.
 ![Events Page 320px](/media/events-320.jpg)
+
+#### Contacts Page
+
+---
+
+On the Contacts page the customers can see our contact information.
+By pressing the facebook-link they can go through to our FB-site.
+![Contacts Page](/media/contact-screen.jpg)
+
+#### Responsiveness Contacts Page
+
+---
+
+And here we have it opened and scaled down to 320px width.
+![Contacts Page 320px](/media/contact-320.jpg)
 
 ##### Event Detail Page
 

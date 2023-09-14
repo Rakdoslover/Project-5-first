@@ -60,8 +60,6 @@ INSTALLED_APPS = [
     # Other
     'storages',
     'django.contrib.staticfiles',
-    'cloudinary_storage',
-    'cloudinary',
     'django_summernote',
     'crispy_forms',
 ]
@@ -219,10 +217,6 @@ STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
-# Cloudinary Storage
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
 
 # EMAIL BACKEND
 if 'DEVELOPMENT' in os.environ:
