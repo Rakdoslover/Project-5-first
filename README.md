@@ -701,6 +701,20 @@ By pressing the event the can get to a more detailed page.
 And here we have it opened and scaled down to 320px width.
 ![Events Page 320px](/media/events-320.jpg)
 
+##### Event Detail Page
+
+---
+
+This is the page where the customer/site-visitors can see more information on the chosen event.
+![Event Detail Page](/media/event-detail.jpg)
+
+##### Event Detail Page
+
+---
+
+And here we have it opened and scaled down to 320px width.
+![Event Detail Page 320px](/media/event-detail-320.jpg)
+
 #### Contacts Page
 
 ---
@@ -715,20 +729,6 @@ By pressing the facebook-link they can go through to our FB-site.
 
 And here we have it opened and scaled down to 320px width.
 ![Contacts Page 320px](/media/contact-320.jpg)
-
-##### Event Detail Page
-
----
-
-This is the page where the customer/site-visitors can see more information on the chosen event.
-![Event Detail Page](/media/event-detail.jpg)
-
-##### Event Detail Page
-
----
-
-And here we have it opened and scaled down to 320px width.
-![Event Detail Page 320px](/media/event-detail-320.jpg)
 
 #### Bag Page
 
@@ -773,7 +773,7 @@ And here we have it opened and scaled down to 320px width.
 Here we have the Facebook page for the Work Workouts.
 On this page customer/visitors/fellow enthusiasts can see the basic info of from our main
 site, like different sessions provided, some info on our gym and future events.
-![Facebook Profile]()
+![Facebook Profile](/media/work-fb.jpg)
 
 [Back to Top of page](#tcontents)
 
