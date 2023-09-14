@@ -442,9 +442,10 @@ with the tests provided below.
 
 | Test                                                           | Result |
 | -------------------------------------------------------------- | ------ |
-| User can read all session available on the site                | Pass   |
+| User can read all sessions available on the site               | Pass   |
 | User can click the session to get into the session details     | Pass   |
 | User can choose an amount and put in their bag                 | Pass   |
+| User cannot access the edit/delete page of the session         | Pass   |
 
 ---
 
@@ -459,6 +460,7 @@ with the tests provided below.
 | Users can engage with the nav bar on the Events pages                      | Pass   |
 | Users can engage with the nav bar on the Bag page                          | Pass   |
 | Users can engage with the nav bar on the Checkout page                     | Pass   |
+| Users can engage with the nav bar on the Contact page                      | Pass   |
 
 ---
 
@@ -469,6 +471,7 @@ with the tests provided below.
 | Users can click on the bag icon to see their bag       | Pass   |
 | Users can see each item row by row                     | Pass   |
 | Users can update and remove items from the bag         | Pass   |
+| Users can access the bag from each other page          | Pass   |
 
 ---
 
@@ -546,7 +549,11 @@ with the tests provided below.
 - [context.py](/media/bag-contexts.jpg)
 - [urls.py](/media/bag-urls.jpg)
 - [views.py](/media/bag-views.jpg)
-- No errors found
+
+##### Contact App
+
+- [urls.py](/media/contact-urls.jpg)
+- [views.py](/media/contact-views.jpg)
 
 ##### Checkout App
 
