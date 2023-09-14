@@ -44,10 +44,10 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in chapter.featured_image.url %}
-                                <img class="card-img-top" src="{{MEDIA_URL}}/placeholder.jpg" style="max-height: 375px"
+                                <img class="card-img-top" src="{{MEDIA_URL}}placeholder.jpg" style="max-height: 375px"
                                     alt="event image">
                                 {% else %}
-                                <img class="card-img-top" src="{{MEDIA_URL}}{{ event.featured_image.url }}" style="max-height: 375px"
+                                <img class="card-img-top" src="{{MEDIA_URL}}{{ event.featured_image }}" style="max-height: 375px"
                                     alt="event image">
                                 {% endif %}
                             </div>
